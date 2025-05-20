@@ -19,8 +19,8 @@ class UserUpdate(BaseModel):
 
 class UserResponse(BaseModel):
     id: int
-    nama: str  # Sesuaikan dengan nama kolom di database
-    email: str  # Sesuaikan dengan kolom yang ada
+    nama: str  
+    email: str  
     kalori: float
     bmr: float
     bmi: float
