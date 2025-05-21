@@ -117,13 +117,15 @@ const Home = () => {
                       <p className="text-sm text-gray-600">{userEmail}</p>
                     </div>
                   </div>
+                  <div className="flex justify-center">
                   <button
                     onClick={handleLogout}
-                    className="w-full bg-[#16A085] text-white py-2 rounded-md hover:bg-[#138d77]"
+                    className="px-6 py-2 text-white text-sm rounded-md hover:bg-[#138d77] w-auto"
                     style={{ backgroundColor: '#16A085' }}
                   >
                     Keluar
                   </button>
+                </div>
                 </div>
               )}
             </li>

@@ -76,7 +76,7 @@ const About = () => {
         style={{
           background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%)',
         }}
-        className=" py-16 px-6 md:px-20 font-poppins text-[#0F836C]"
+        className=" py-18 px-6 md:px-20 font-poppins text-[#0F836C]"
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Kiri - Teks dan fitur */}

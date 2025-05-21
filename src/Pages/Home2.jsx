@@ -1,15 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, NavLink, Link } from 'react-router-dom'; // ✅ Tambahkan ini
+import { useNavigate, NavLink, Link } from 'react-router-dom';
 import logo from '../assets/logo2.png';
 import { motion } from 'framer-motion';
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Home2 = () => {
   const backgroundStyle = {
     background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%, #F7F1E3 100%)'
   };
+  const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+
+  const userName = localStorage.getItem("userName") || "User"
+  const userEmail = localStorage.getItem("userEmail") || "User@gmail.com"
+  const userAvatar = localStorage.getItem("selectedAvatar");
 
   const [avatar, setAvatar] = useState(null);
   const navigate = useNavigate(); // ✅ Hook untuk navigasi
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate('/');
+  };
 
   useEffect(() => {
     const storedAvatar = localStorage.getItem('selectedAvatar');
@@ -21,14 +32,13 @@ const Home2 = () => {
       navigate("/dailymissions"); // ✅ Navigasi ke halaman DailyMissions
     }
 
-    if (label === "Perbarui BMI") {
+    if (label === "Perbarui IMT") {
       navigate("/bmi");
     }
 
     if (label === "Rekomendasi Menu") {
       navigate("/menu");
     }
-    // kamu bisa tambahkan else if untuk label lainnya jika perlu
   };
 
   return (
@@ -75,21 +85,34 @@ const Home2 = () => {
                 </NavLink>
 
               </li>
-              <li>
-                <Link
-                  to="/signup"
-                  className="bg-teal-200 px-6 py-2 rounded-full !text-[#0F836C] font-poppins hover:bg-teal-300 hover:text-[#FFFDD0]"
+              <li className="relative">
+                <div
+                  onClick={() => setShowProfileDropdown(!showProfileDropdown)}
+                  className="flex items-center cursor-pointer hover:text-[#FFFDD0]"
                 >
-                  Daftar
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/signin"
-                  className="bg-teal-200 px-6 py-2 rounded-full !text-[#0F836C] font-poppins hover:bg-teal-300 hover:text-[#FFFDD0]"
-                >
-                  Masuk
-                </Link>
+                  <span>Profil</span>
+                  <FaChevronDown className="ml-2" />
+                </div>
+                {showProfileDropdown && (
+                  <div className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg w-80 z-50 p-4">
+                    <div className="flex items-center gap-3 border-b pb-3 mb-3">
+                      <img src={userAvatar} alt="avatar" className="w-15 h-15 rounded-full border border-[#16A085]" />
+                      <div>
+                        <h4 className="font-bold text-base">{userName}</h4>
+                        <p className="text-sm text-gray-600">{userEmail}</p>
+                      </div>
+                    </div>
+                    <div className="flex justify-center">
+                      <button
+                        onClick={handleLogout}
+                        className="px-6 py-2 text-white text-sm rounded-md hover:bg-[#138d77] w-auto"
+                        style={{ backgroundColor: '#16A085' }}
+                      >
+                        Keluar
+                      </button>
+                    </div>
+                  </div>
+                )}
               </li>
             </ul>
           </div>
@@ -115,7 +138,7 @@ const Home2 = () => {
               <p className="text-[#16A085] font-medium">kkal</p>
             </div>
             <div className="bg-white rounded-md p-4 text-center border border-[#16A085]">
-              <h2 className="text-lg font-semibold text-black mb-1">BMI</h2>
+              <h2 className="text-lg font-semibold text-black mb-1">IMT</h2>
               <p className="text-[#16A085] font-medium">--</p>
             </div>
           </div>
@@ -124,7 +147,7 @@ const Home2 = () => {
 
           {/* Tombol Aksi */}
           <div className="space-y-3">
-            {["Misi Harian", "Perbarui BMI", "Rekomendasi Menu"].map((label, index) => (
+            {["Misi Harian", "Perbarui IMT", "Rekomendasi Menu"].map((label, index) => (
               <button
                 key={index}
                 className="w-full bg-white text-[#16A085] font-medium py-2 px-4 rounded-md hover:bg-[#c7eee6] transition border border-[#16A085] text-sm md:text-base flex justify-between items-center"
