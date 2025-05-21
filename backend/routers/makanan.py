@@ -14,6 +14,13 @@ router = APIRouter(
 )
 
 ## Fungsi kategori kalori makanan disini
+def kategori_kalori(kal):
+    if kal > 500:
+        return "Tinggi"
+    elif 200 <= kal <= 500:
+        return "Sedang"
+    else:
+        return "Rendah"
 
 kmeans = joblib.load("C:/DIKA/SEM 4/Teknologi Web Service/Obsicare/app/ML/model_clustering_makanan.pkl")
 scaler = joblib.load("C:/DIKA/SEM 4/Teknologi Web Service/Obsicare/app/ML/scaler_makanan.pkl")

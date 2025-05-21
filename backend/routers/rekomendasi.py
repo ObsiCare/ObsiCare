@@ -47,7 +47,13 @@ def rekomendasi_makanan(
         }
     
     ## Rule penampilan rekomendasi makanan berdasarkan sisa kalori di sini
-
+    if sisa_kalori > 1000:
+        cluster_rekomendasi = [2]
+    elif 300 <= sisa_kalori <= 1000:
+        cluster_rekomendasi = [1]
+    else:  # < 300
+        cluster_rekomendasi = [0]
+        
     rekomendasi = (
         db.query(Makanan)
         .filter(Makanan.cluster.in_(cluster_rekomendasi))
