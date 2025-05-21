@@ -2,27 +2,44 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaHome } from 'react-icons/fa';
-import { FiEye, FiEyeOff } from 'react-icons/fi';
+import axios from 'axios';
 
 const Register = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Register with:', { fullName, email, password });
 
-    // Logika simpan user jika diperlukan
+    // Validasi input (tambahan opsional)
+    if (!fullName.trim() || !email.trim() || !password.trim()) {
+      setError('Semua field wajib diisi.');
+      return;
+    }
 
-    // Arahkan ke halaman login setelah register
-    navigate('/signin');
+    try {
+      await axios.post('http://localhost:8000/auth/auth/register', {
+        nama: fullName,
+        email: email,
+        password: password,
+      });
+
+      // Setelah register berhasil, arahkan ke halaman login
+      navigate('/signin');
+    } catch (err) {
+      if (err.response && err.response.data && err.response.data.detail) {
+        setError(err.response.data.detail);
+      } else {
+        setError('Terjadi kesalahan saat registrasi.');
+      }
+    }
   };
 
   const backgroundStyle = {
-    background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%, #F7F1E3 100%)'
+    background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%, #F7F1E3 100%)',
   };
 
   return (
@@ -50,7 +67,7 @@ const Register = () => {
             <div className="flex-1 flex justify-center items-center">
               <div className="w-80 h-80 rounded-full flex items-center justify-center overflow-visible" style={{ backgroundColor: '#16A085' }}>
                 <div className="text-center flex flex-col justify-center items-center">
-                  <h1 className="font-bold text-black mb-1" style={{ fontSize: '7rem', lineHeight: '1', fontFamily: '"Montserrat", sans-serif' }}>
+                  <h1 className="font-bold text-black mb-1" style={{ fontSize: '7rem', lineHeight: '1', fontFamily: '"Rozha One", serif' }}>
                     ObsiCare
                   </h1>
                   <p
@@ -60,7 +77,7 @@ const Register = () => {
                       fontWeight: '500',
                       letterSpacing: '1px',
                       marginTop: '0px',
-                      fontFamily: '"Montserrat", sans-serif',
+                      fontFamily: '"Rowdies", cursive',
                     }}
                   >
                     small step for better life
@@ -78,13 +95,14 @@ const Register = () => {
                 <form onSubmit={handleSubmit}>
                   {/* Form Group: Name */}
                   <div className="mb-6 text-left">
-                    <label htmlFor="name" className="block text-lg font-medium mb-2">Nama Lengkap</label>
+                    <label htmlFor="name" className="block text-lg font-medium mb-2">Nama</label>
                     <input
                       type="text"
                       id="name"
                       className="w-full p-4 border border-gray-300 rounded-md bg-white"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
+                      placeholder="masukkan nama anda"
                       required
                     />
                   </div>
@@ -98,6 +116,7 @@ const Register = () => {
                       className="w-full p-4 border border-gray-300 rounded-md bg-white"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                       placeholder="contoh@gmail.com"
                       required
                     />
                   </div>
@@ -105,27 +124,26 @@ const Register = () => {
                   {/* Form Group: Password */}
                   <div className="mb-6 text-left">
                     <label htmlFor="password" className="block text-lg font-medium mb-2">Sandi</label>
-                    <div className="relative">
-                      <input
-                        type={showPassword ? 'text' : 'password'}
-                        id="password"
-                        className="w-full p-4 pr-12 border border-gray-300 rounded-md bg-white"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                      />
-                      <span
-                        onClick={() => setShowPassword(!showPassword)}
-                        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-600 cursor-pointer"
-                      >
-                        {showPassword ? <FiEyeOff size={20} /> : <FiEye size={20} />}
-                      </span>
-                    </div>
+                    <input
+                      type="password"
+                      id="password"
+                      className="w-full p-4 border border-gray-300 rounded-md bg-white"
+                      value={password}
+                      minLength={8}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="masuk kata sandi anda"
+                      required
+                    />
+                    {password.length > 0 && password.length < 8 && (
+                      <p style={{ color: "red" }}>Password minimal 8 karakter</p>
+                    )}
                   </div>
+
+                  {error && <p className="text-red-600 text-sm mb-4">{error}</p>}
 
                   <button
                     type="submit"
-                    className="w-full py-4 text-white rounded-full text-xl font-bold transition-colors mb-8"
+                    className="w-full py-4 text-white rounded-full text-xl font-medium transition-colors mb-8"
                     style={{ backgroundColor: '#16A085' }}
                   >
                     Daftar

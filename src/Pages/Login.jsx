@@ -2,18 +2,19 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaHome } from 'react-icons/fa';
-import { FiEye, FiEyeOff } from 'react-icons/fi'; // 👈 Tambahan ikon mata
+import { FiEdit, FiLogOut } from 'react-icons/fi';
+import axios from 'axios';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false); // 👈 State untuk toggle sandi
   const [errors, setErrors] = useState({ email: '', password: '' });
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setErrorMessage('');
     let hasError = false;
     const newErrors = { email: '', password: '' };
 
@@ -28,11 +29,34 @@ const Login = () => {
     }
 
     setErrors(newErrors);
-
     if (hasError) return;
 
-    console.log('Login attempt with:', email);
-    navigate('/home');
+    try {
+      const response = await axios.post('http://localhost:8000/auth/auth/login', {
+        email: email,
+        password: password,
+      });
+
+      const { access_token, user } = response.data;
+
+      // Simpan token dan user info (opsional)
+      localStorage.setItem('token', access_token);
+      localStorage.setItem('user', JSON.stringify(user));
+
+      // Arahkan ke halaman utama
+      if (user.berat_badan && user.tinggi_badan) {
+        navigate('/home2'); // Arahkan ke halaman Home2
+      } else {
+        navigate('/home');  // Arahkan ke halaman Home untuk melengkapi data
+      }
+
+    } catch (error) {
+      if (error.response && error.response.data.detail) {
+        setErrorMessage(error.response.data.detail);
+      } else {
+        setErrorMessage('Terjadi kesalahan saat login.');
+      }
+    }
   };
 
   const backgroundStyle = {
@@ -41,11 +65,11 @@ const Login = () => {
 
   return (
     <>
-      {/* Ikon Rumah */}
+      {/* Ikon Rumah di luar container */}
       <div className="fixed bottom-7 right-10 z-80">
         <Link
           to="/"
-          className="text-[#16A085] hover:text-teal-600 transition duration-300"
+          className="text-[#16A085] visited:text-[#16A085] focus:text-[#16A085] hover:text-teal-600 transition duration-300"
         >
           <FaHome size={40} />
         </Link>
@@ -59,22 +83,12 @@ const Login = () => {
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-full h-full flex items-center justify-between relative">
-          {/* Hero kiri */}
+        <div className="w-full h-full flex items-center justify-between">
+          {/* Left side with logo */}
           <div className="flex-1 flex justify-center items-center">
-            <div
-              className="w-80 h-80 rounded-full flex items-center justify-center overflow-visible"
-              style={{ backgroundColor: '#16A085' }}
-            >
+            <div className="w-80 h-80 rounded-full flex items-center justify-center overflow-visible" style={{ backgroundColor: '#16A085' }}>
               <div className="text-center flex flex-col justify-center items-center">
-                <h1
-                  className="font-bold text-black mb-1"
-                  style={{
-                    fontSize: '7rem',
-                    lineHeight: '1',
-                    fontFamily: '"Montserrat", sans-serif',
-                  }}
-                >
+                <h1 className="font-bold text-black mb-1" style={{ fontSize: '7rem', lineHeight: '1', fontFamily: '"Rozha One", serif' }}>
                   ObsiCare
                 </h1>
                 <p
@@ -84,7 +98,7 @@ const Login = () => {
                     fontWeight: '500',
                     letterSpacing: '1px',
                     marginTop: '0px',
-                    fontFamily: '"Montserrat", sans-serif',
+                    fontFamily: '"Rowdies", cursive',
                   }}
                 >
                   small step for better life
@@ -93,58 +107,51 @@ const Login = () => {
             </div>
           </div>
 
-          {/* Garis Tengah */}
+          {/* Garis tengah */}
           <div className="w-[2px] h-3/4 bg-black"></div>
 
-          {/* Form Login */}
+          {/* Right side with login form */}
           <div className="flex-1 flex justify-center items-center py-12">
             <div className="w-96 p-8 rounded-lg bg-white/30 backdrop-blur-sm">
               <form onSubmit={handleSubmit}>
-                {/* Email */}
+                {/* Form Group: Email */}
                 <div className="mb-6 text-left">
-                  <label htmlFor="email" className="block text-lg font-medium mb-2">
-                    Alamat Email
-                  </label>
+                  <label htmlFor="email" className="block text-lg font-medium mb-2">Alamat Email</label>
                   <input
                     type="email"
                     id="email"
                     className="w-full p-4 border border-gray-300 rounded-md bg-white"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    placeholder="contoh@gmail.com"
                     required
                   />
-                  {errors.email && (
-                    <p className="text-red-600 text-sm mt-1">{errors.email}</p>
-                  )}
+                  {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
                 </div>
 
-                {/* Password + Icon Mata */}
-                <div className="mb-6 text-left relative">
-                  <label htmlFor="password" className="block text-lg font-medium mb-2">
-                    Sandi
-                  </label>
-                  <div className="relative flex items-center">
+                {/* Form Group: Password */}
+                <div className="mb-6 text-left">
+                  <label htmlFor="password" className="block text-lg font-medium mb-2">Sandi</label>
                   <input
-                    type={showPassword ? 'text' : 'password'}
+                    type="password"
                     id="password"
-                    className="w-full p-4 border border-gray-300 rounded-md bg-white pr-12"
+                    className="w-full p-4 border border-gray-300 rounded-md bg-white"
                     value={password}
+                    minLength={8}
                     onChange={(e) => setPassword(e.target.value)}
+                    placeholder="kata sandi minimal 8 karakter"
                     required
                   />
-                  </div>
-                  <span
-                    onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-4 top-[65px] transform -translate-y-1/2 text-gray-600 cursor-pointer"
-                  >
-                    {showPassword ? <FiEyeOff size={20} /> : <FiEye size={20} />}
-                  </span>
-                  {errors.password && (
-                    <p className="text-red-600 text-sm mt-1">{errors.password}</p>
+                  {password.length > 0 && password.length < 8 && (
+                    <p style={{ color: "red" }}>Password minimal 8 karakter</p>
                   )}
                 </div>
 
-                {/* Tombol Masuk */}
+                {/* Error Message */}
+                {errorMessage && (
+                  <p className="text-red-600 text-sm mb-4">{errorMessage}</p>
+                )}
+
                 <button
                   type="submit"
                   className="w-full py-4 text-white rounded-full text-xl font-medium transition-colors mb-8"
@@ -153,7 +160,6 @@ const Login = () => {
                   Masuk
                 </button>
 
-                {/* Link ke Daftar */}
                 <div className="text-center">
                   <span>Buat akun baru? </span>
                   <Link to="/signup" className="font-semibold" style={{ color: '#16A085' }}>

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { FiEdit } from 'react-icons/fi';
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import avatar1 from '../assets/avatar1.png';
 import avatar2 from '../assets/avatar2.png';
@@ -23,7 +23,8 @@ const Home = () => {
   const [showGenderOptions, setShowGenderOptions] = useState(false);
   const [showAvatarOptions, setShowAvatarOptions] = useState(false);
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
-
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
   const avatarRef = useRef(null);
 
   const activityOptions = [
@@ -33,10 +34,14 @@ const Home = () => {
     'Aktif (5-6x seminggu)',
   ];
 
-  const avatarOptions = [avatar1, avatar2, avatar3, avatar4, avatar5];
+  const activityMap = {
+    'Sedentari (Tidak olahraga sama sekali)': 'sedentari',
+    'Ringan (1-3x seminggu)': 'ringan',
+    'Sedang (3-5x seminggu)': 'sedang',
+    'Aktif (5-6x seminggu)': 'berat'
+  };
 
-  const userName = localStorage.getItem("userName") || "User"
-  const userEmail = localStorage.getItem("userEmail") || "User@gmail.com"
+  const avatarOptions = [avatar1, avatar2, avatar3, avatar4, avatar5];
   const userAvatar = localStorage.getItem("selectedAvatar");
 
   const handleActivitySelect = (option) => {
@@ -44,17 +49,87 @@ const Home = () => {
     setShowActivityOptions(false);
   };
 
-  const handleSave = () => {
-    console.log({ height, weight, age, gender, activityLevel, selectedAvatar });
-    alert('Data berhasil disimpan!');
-    navigate('/home2');
+  const handleSave = async () => {
+    if (!height || !weight || !age || !gender || !activityLevel) {
+      alert('Harap lengkapi semua data terlebih dahulu!');
+      return;
+    }
+
+    const token = localStorage.getItem('token');
+    if (!token) {
+      alert('Anda belum login!');
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:8000/users/users/update', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          berat_badan: parseFloat(weight),
+          tinggi_badan: parseFloat(height),
+          usia: parseInt(age),
+          jenis_kelamin: gender.toLowerCase(),
+          aktivitas_fisik: activityMap[activityLevel]
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Gagal menyimpan data');
+      }
+
+      const data = await response.json();
+      console.log('Response:', data, selectedAvatar);
+      alert('Data berhasil disimpan!');
+      navigate('/home2');
+    } catch (error) {
+      console.error('Error:', error.message);
+      alert(`Gagal menyimpan data: ${error.message}`);
+    }
   };
 
   const handleLogout = () => {
+    const savedAvatar = localStorage.getItem("selectedAvatar");
     localStorage.clear();
+    if (savedAvatar) {
+      localStorage.setItem("selectedAvatar", savedAvatar);
+    }
     navigate('/');
-  };
+  }
 
+  // Fetch nama user saat komponen dimuat
+  useEffect(() => {
+    const fetchUserData = async () => {
+      const token = localStorage.getItem('token');
+      if (!token) return;
+
+      try {
+        const response = await fetch('http://localhost:8000/users/users/username&email', {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error('Gagal mengambil data user');
+        }
+
+        const data = await response.json();
+        setUserName(data.nama);
+        setUserEmail(data.email);
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+      }
+    };
+
+    fetchUserData();
+  }, []);
+
+  // Tutup dropdown avatar saat klik di luar
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (avatarRef.current && !avatarRef.current.contains(event.target)) {
@@ -75,7 +150,7 @@ const Home = () => {
       <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-          <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
+          <ul className="flex flex-wrap gap-20 md:gap-20 items-center font-bold text-base md:text-xl tracking-widest">
             <li>
               <NavLink
                 to="/"
@@ -108,43 +183,52 @@ const Home = () => {
                 <span>Profil</span>
                 <FaChevronDown className="ml-2" />
               </div>
-              {showProfileDropdown && (
-                <div className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg w-80 z-50 p-4">
-                  <div className="flex items-center gap-3 border-b pb-3 mb-3">
-                    <img src={userAvatar} alt="avatar" className="w-15 h-15 rounded-full border border-[#16A085]" />
-                    <div>
-                      <h4 className="font-bold text-base">{userName}</h4>
-                      <p className="text-sm text-gray-600">{userEmail}</p>
-                    </div>
-                  </div>
-                  <div className="flex justify-center">
-                  <button
-                    onClick={handleLogout}
-                    className="px-6 py-2 text-white text-sm rounded-md hover:bg-[#138d77] w-auto"
-                    style={{ backgroundColor: '#16A085' }}
+              <AnimatePresence>
+                {showProfileDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg w-80 z-50 p-4"
                   >
-                    Keluar
-                  </button>
-                </div>
-                </div>
-              )}
+                    <div className="flex items-center gap-3 border-b pb-3 mb-3">
+                      <img src={userAvatar} alt="avatar" className="w-15 h-15 rounded-full border border-[#16A085]" />
+                      <div>
+                        <h4 className="font-bold text-base">{userName}</h4>
+                        <p className="text-sm text-gray-600">{userEmail}</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={handleLogout}
+                      className="w-full bg-[#16A085] text-white py-2 rounded-md hover:bg-[#138d77]"
+                      style={{ backgroundColor: '#16A085' }}
+                    >
+                      Keluar
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </li>
           </ul>
         </div>
       </nav>
 
-      {/* ✅ Konten Utama */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="pt-1 pb-10 flex flex-col items-center"
       >
-        {/* Avatar */}
-        <div className="relative flex flex-col items-center mt-4 mb-2" ref={avatarRef}>
+        {/* Avatar dan Edit */}
+        <div className="relative flex flex-col items-center mt-10 mb-2" ref={avatarRef}>
           <div className="relative w-40 h-40 rounded-full border-4 border-[#16A085] shadow-lg">
             {selectedAvatar ? (
-              <img src={selectedAvatar} alt="Selected Avatar" className="w-full h-full object-cover" />
+              <img
+                src={selectedAvatar}
+                alt="Selected Avatar"
+                className="w-full h-full object-cover"
+              />
             ) : (
               <span className="text-gray-400 flex items-center justify-center w-full h-full">Pilih Avatar</span>
             )}
@@ -154,6 +238,7 @@ const Home = () => {
               onClick={() => setShowAvatarOptions(!showAvatarOptions)}
             />
           </div>
+
           {showAvatarOptions && (
             <div className="absolute top-full mt-3 z-20 bg-white border border-[#16A085] rounded-lg shadow-md p-4 w-80">
               <h2 className="text-center text-[#16A085] font-semibold mb-2">Pilih Avatar</h2>
@@ -163,9 +248,7 @@ const Home = () => {
                     key={index}
                     src={avatar}
                     alt={`Avatar ${index + 1}`}
-                    className={`w-16 h-16 rounded-full object-cover cursor-pointer border-4 ${
-                      selectedAvatar === avatar ? 'border-[#16A085]' : 'border-transparent'
-                    }`}
+                    className={`w-16 h-16 rounded-full object-cover cursor-pointer border-4 ${selectedAvatar === avatar ? 'border-[#16A085]' : 'border-transparent'}`}
                     onClick={() => {
                       setSelectedAvatar(avatar);
                       setShowAvatarOptions(false);
@@ -178,13 +261,13 @@ const Home = () => {
           )}
         </div>
 
-        {/* Sambutan */}
+        {/* Teks Sambutan */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl font-semibold text-black">Selamat Datang, {userName}!</h2>
+          <h2 className="text-3xl font-semibold text-black">Selamat Datang, {userName || 'User'}!</h2>
           <p className="text-black text-xl">Masukkan informasi untuk membantu monitoring pola makan Anda.</p>
         </div>
 
-        {/* Form */}
+        {/* Form Input */}
         <div className="rounded-xl p-8 w-full max-w-6xl mb-6" style={{ backgroundColor: '#E0F5F1' }}>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {/* Tinggi Badan */}
@@ -241,14 +324,20 @@ const Home = () => {
                 onClick={() => setShowGenderOptions(!showGenderOptions)}
               >
                 <span>{gender || "Pilih jenis kelamin"}</span>
-                {showGenderOptions ? <FaChevronUp /> : <FaChevronDown />}
+                {showGenderOptions ? (
+                  <FaChevronUp className="text-[#16A085]" />
+                ) : (
+                  <FaChevronDown className="text-[#16A085]" />
+                )}
               </div>
+
               {showGenderOptions && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md z-10" style={{ borderColor: '#16A085' }}>
                   {["Laki-laki", "Perempuan"].map((option, index) => (
                     <div
                       key={index}
                       className="p-3 hover:bg-[#E0F5F1] cursor-pointer border-b last:border-b-0 text-black"
+                      style={{ borderColor: '#16A085' }}
                       onClick={() => {
                         setGender(option);
                         setShowGenderOptions(false);
@@ -270,14 +359,20 @@ const Home = () => {
                 onClick={() => setShowActivityOptions(!showActivityOptions)}
               >
                 <span>{activityLevel || "Pilih aktivitas"}</span>
-                {showActivityOptions ? <FaChevronUp /> : <FaChevronDown />}
+                {showActivityOptions ? (
+                  <FaChevronUp className="text-[#16A085]" />
+                ) : (
+                  <FaChevronDown className="text-[#16A085]" />
+                )}
               </div>
+
               {showActivityOptions && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md z-10" style={{ borderColor: '#16A085' }}>
                   {activityOptions.map((option, index) => (
                     <div
                       key={index}
                       className="p-3 hover:bg-[#E0F5F1] cursor-pointer border-b last:border-b-0 text-black"
+                      style={{ borderColor: '#16A085' }}
                       onClick={() => handleActivitySelect(option)}
                     >
                       {option}

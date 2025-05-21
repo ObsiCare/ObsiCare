@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaChevronDown } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import groupImage from '../assets/orang.png';
 import iconEasy from '../assets/jari.png';
@@ -10,6 +11,44 @@ import iconRecommend from '../assets/alat.png';
 import laptop from '../assets/laptop.png';
 
 const About = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [avatar, setAvatar] = useState('');
+
+  const backgroundStyle = {
+    background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%)',
+  };
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const avatar = localStorage.getItem('selectedAvatar');
+    if (token) {
+      setIsLoggedIn(true);
+      setAvatar(avatar);
+      fetch('http://localhost:8000/users/users/me', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setUserName(data.nama);
+          setUserEmail(data.email);
+        })
+        .catch((err) => console.error(err));
+    }
+  }, []);
+
+  const handleLogout = () => {
+    const savedAvatar = localStorage.getItem("selectedAvatar");
+    localStorage.clear();
+    if (savedAvatar) {
+      localStorage.setItem("selectedAvatar", savedAvatar);
+    }
+    window.location.reload(); // refresh page to reflect logout
+  };
 
   return (
     <motion.div
@@ -17,57 +56,98 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
       transition={{ duration: 0.6 }}
+      className="min-h-screen w-full flex flex-col"
+      style={backgroundStyle}
     >
       {/* ✅ Navbar */}
       <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-          <ul className="flex gap-4 text-lg font-medium"></ul>
-
-          {/* Navigation Links */}
           <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white underline underline-offset-4 !text-white"
-                    : "text-white hover:text-[#FFFDD0]"
+                    ? "underline underline-offset-4 text-white"
+                    : "hover:text-[#FFFDD0]"
                 }
               >
                 Beranda
               </NavLink>
-
             </li>
             <li>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white underline underline-offset-4 !text-white"
-                    : "text-white hover:text-[#FFFDD0]"
+                    ? "underline underline-offset-4 text-white"
+                    : "hover:text-[#FFFDD0]"
                 }
               >
                 Tentang
               </NavLink>
+            </li>
 
-            </li>
-            <li>
-              <Link
-                to="/signup"
-                className="bg-teal-200 px-6 py-2 rounded-full !text-[#0F836C] font-poppins hover:bg-teal-300 hover:text-[#FFFDD0]"
-              >
-                Daftar
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/signin"
-                className="bg-teal-200 px-6 py-2 rounded-full !text-[#0F836C] font-poppins hover:bg-teal-300 hover:text-[#FFFDD0]"
-              >
-                Masuk
-              </Link>
-            </li>
+            {!isLoggedIn ? (
+              <>
+                <li>
+                  <Link
+                    to="/signup"
+                    className="bg-teal-600 px-4 py-1.5 rounded-xl text-[#0F836C] hover:bg-teal-200 hover:text-[#FFFDD0]"
+                  >
+                    Daftar
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/signin"
+                    className="bg-teal-600 px-4 py-1.5 rounded-xl text-[#0F836C] hover:bg-teal-200 hover:text-[#FFFDD0]"
+                  >
+                    Masuk
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <li className="relative">
+                <div
+                  onClick={() => setShowProfileDropdown(!showProfileDropdown)}
+                  className="flex items-center cursor-pointer hover:text-[#FFFDD0]"
+                >
+                  <span>Profil</span>
+                  <FaChevronDown className="ml-2" />
+                </div>
+                <AnimatePresence>
+                  {showProfileDropdown && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.3 }}
+                      className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg w-80 z-50 p-4"
+                    >
+                      <div className="flex items-center gap-3 border-b pb-3 mb-3">
+                        <img
+                          src={avatar}
+                          alt="avatar"
+                          className="w-12 h-12 rounded-full border border-[#16A085]"
+                        />
+                        <div>
+                          <h4 className="font-bold text-base">{userName}</h4>
+                          <p className="text-sm text-gray-600">{userEmail}</p>
+                        </div>
+                      </div>
+                      <button
+                        onClick={handleLogout}
+                        className="w-full bg-[#16A085] text-white py-2 rounded-md hover:bg-[#138d77]"
+                      >
+                        Keluar
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </li>
+            )}
           </ul>
         </div>
       </nav>
@@ -76,9 +156,9 @@ const About = () => {
         style={{
           background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%)',
         }}
-        className=" py-18 px-6 md:px-20 font-poppins text-[#0F836C]"
+        className="py-25 px-6 md:px-10 font-poppins text-[#0F836C]"
       >
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-auto mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Kiri - Teks dan fitur */}
           <div>
             <h2 className="text-3xl font-bold text-teal-900 mb-6 font-poppins text-[#0F836C]">Tentang Obsicare</h2>
@@ -114,12 +194,12 @@ const About = () => {
             <img
               src={laptop}
               alt="Laptop"
-              className="absolute bottom-[-50px] left-[53px] w-[60%] md:w-[60%] lg:w-[60%] z-20"
+              className="absolute bottom-[-79px] left-[65px] w-[56%] md:w-[56%] lg:w-[56%] z-20"
             />
             <img
               src={groupImage}
               alt="Obsicare Illustration"
-              className="w-[85%] h-auto rounded-xl shadow-lg z-10"
+              className="w-[70%] h-auto rounded-xl shadow-lg z-10"
             />
           </div>
         </div>

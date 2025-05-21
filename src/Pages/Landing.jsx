@@ -1,13 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaChevronDown } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import HeroImage from '../assets/Logo4.png';
 
 const Landing = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [avatar, setAvatar] = useState('');
+
   const backgroundStyle = {
     background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%)',
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const avatar = localStorage.getItem('selectedAvatar');
+    if (token) {
+      setIsLoggedIn(true);
+      setAvatar(avatar);
+      fetch('http://localhost:8000/users/users/me', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setUserName(data.nama);
+          setUserEmail(data.email);
+        })
+        .catch((err) => console.error(err));
+    }
+  }, []);
+
+  const handleLogout = () => {
+    const savedAvatar = localStorage.getItem("selectedAvatar");
+    localStorage.clear();
+    if (savedAvatar) {
+      localStorage.setItem("selectedAvatar", savedAvatar);
+    }
+    window.location.reload(); // refresh page to reflect logout
+  };
+
 
   return (
     <motion.div
@@ -19,55 +56,94 @@ const Landing = () => {
       style={backgroundStyle}
     >
       {/* ✅ Navbar */}
-      <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-          <ul className="flex gap-4 text-lg font-medium"></ul>
-
-          {/* Navigation Links */}
-          <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
+              <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
+                <div className="container mx-auto flex justify-between items-center">
+                  <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+                  <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white underline underline-offset-4 !text-white"
-                    : "text-white hover:text-[#FFFDD0]"
+                    ? "underline underline-offset-4 text-white"
+                    : "hover:text-[#FFFDD0]"
                 }
               >
                 Beranda
               </NavLink>
-
             </li>
             <li>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white underline underline-offset-4 !text-white"
-                    : "text-white hover:text-[#FFFDD0]"
+                    ? "underline underline-offset-4 text-white"
+                    : "hover:text-[#FFFDD0]"
                 }
               >
                 Tentang
               </NavLink>
+            </li>
 
-            </li>
-            <li>
-              <Link
-                to="/signup"
-                className="bg-teal-200 px-6 py-2 rounded-full !text-[#0F836C] font-poppins hover:bg-teal-300 hover:text-[#FFFDD0]"
-              >
-                Daftar
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/signin"
-                className="bg-teal-200 px-6 py-2 rounded-full !text-[#0F836C] font-poppins hover:bg-teal-300 hover:text-[#FFFDD0]"
-              >
-                Masuk
-              </Link>
-            </li>
+            {!isLoggedIn ? (
+              <>
+                <li>
+                  <Link
+                    to="/signup"
+                    className="bg-teal-600 px-4 py-1.5 rounded-xl text-[#0F836C] hover:bg-teal-200 hover:text-[#FFFDD0]"
+                  >
+                    Daftar
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/signin"
+                    className="bg-teal-600 px-4 py-1.5 rounded-xl text-[#0F836C] hover:bg-teal-200 hover:text-[#FFFDD0]"
+                  >
+                    Masuk
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <li className="relative">
+                <div
+                  onClick={() => setShowProfileDropdown(!showProfileDropdown)}
+                  className="flex items-center cursor-pointer hover:text-[#FFFDD0]"
+                >
+                  <span>Profil</span>
+                  <FaChevronDown className="ml-2" />
+                </div>
+                <AnimatePresence>
+                  {showProfileDropdown && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.3 }}
+                      className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg w-80 z-50 p-4"
+                    >
+                      <div className="flex items-center gap-3 border-b pb-3 mb-3">
+                        <img
+                          src={avatar}
+                          alt="avatar"
+                          className="w-12 h-12 rounded-full border border-[#16A085]"
+                        />
+                        <div>
+                          <h4 className="font-bold text-base">{userName}</h4>
+                          <p className="text-sm text-gray-600">{userEmail}</p>
+                        </div>
+                      </div>
+                      <button
+                        onClick={handleLogout}
+                        className="w-full bg-[#16A085] text-white py-2 rounded-md hover:bg-[#138d77]"
+                      >
+                        Keluar
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </li>
+            )}
           </ul>
         </div>
       </nav>
