@@ -13,6 +13,8 @@ router = APIRouter(
     dependencies=[Depends(JWTBearer())]
 )
 
+## Fungsi kategori kalori makanan disini
+
 kmeans = joblib.load("C:/DIKA/SEM 4/Teknologi Web Service/Obsicare/app/ML/model_clustering_makanan.pkl")
 scaler = joblib.load("C:/DIKA/SEM 4/Teknologi Web Service/Obsicare/app/ML/scaler_makanan.pkl")
 

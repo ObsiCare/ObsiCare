@@ -45,6 +45,8 @@ def rekomendasi_makanan(
             "sisa_kalori": 0,
             "rekomendasi": []
         }
+    
+    ## Rule penampilan rekomendasi makanan berdasarkan sisa kalori di sini
 
     rekomendasi = (
         db.query(Makanan)

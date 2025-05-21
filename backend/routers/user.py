@@ -13,6 +13,8 @@ router = APIRouter(
     dependencies=[Depends(JWTBearer())]
 )
 
+## Endpoint PUT untuk update data penting user di sini
+
 @router.put("/update-kalori")
 def update_kalori_dengan_bb_tb(
     data: UpdateBBTB,
