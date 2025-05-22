@@ -41,7 +41,7 @@ const Home2 = () => {
     }
 
     if (label === "Rekomendasi Menu") {
-      navigate("/menu");
+      navigate("/searchmakanan");
     }
 
   };
