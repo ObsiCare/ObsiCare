@@ -24,7 +24,7 @@ function AnimatedRoutes() {
         <Route path="/signup" element={<Register />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/dailymissions" element={<DailyMission />} />
-        <Route path="/bmi" element={<Bmi />} />
+        <Route path="/update-bmi" element={<Bmi />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/detailmenu/:nama" element={<DetailMenu />} />
         <Route path="/about" element={<About />} /> 

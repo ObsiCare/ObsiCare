@@ -37,7 +37,7 @@ const Home2 = () => {
     }
 
     if (label === "Perbarui BMI") {
-      navigate("/bmi");
+      navigate("/update-bmi");
     }
 
     if (label === "Rekomendasi Menu") {
