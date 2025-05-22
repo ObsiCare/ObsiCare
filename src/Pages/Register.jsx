@@ -67,7 +67,7 @@ const Register = () => {
             <div className="flex-1 flex justify-center items-center">
               <div className="w-80 h-80 rounded-full flex items-center justify-center overflow-visible" style={{ backgroundColor: '#16A085' }}>
                 <div className="text-center flex flex-col justify-center items-center">
-                  <h1 className="font-bold text-black mb-1" style={{ fontSize: '7rem', lineHeight: '1', fontFamily: '"Rozha One", serif' }}>
+                  <h1 className="font-bold text-black mb-1" style={{ fontSize: '7rem', lineHeight: '1', fontFamily: '"Montserrat", sans-serif' }}>
                     ObsiCare
                   </h1>
                   <p
@@ -77,7 +77,7 @@ const Register = () => {
                       fontWeight: '500',
                       letterSpacing: '1px',
                       marginTop: '0px',
-                      fontFamily: '"Rowdies", cursive',
+                      fontFamily: '"Montserrat", sans-serif',
                     }}
                   >
                     small step for better life
