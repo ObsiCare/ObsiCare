@@ -1,11 +1,16 @@
 import numpy as np
 import joblib
+import os
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models.makanan import Makanan
 from app.schemas.makanan_schema import MakananCreate, MakananResponse
 from app.auth.auth_bearer import JWTBearer
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
+MODEL_PATH = os.path.join(BASE_DIR, "..", "ML", "model_clustering_makanan.pkl")
+SCALER_PATH = os.path.join(BASE_DIR, "..", "ML", "scaler_makanan.pkl")
 
 router = APIRouter(
     prefix="/makanan",
@@ -22,8 +27,8 @@ def kategori_kalori(kal):
     else:
         return "Rendah"
 
-kmeans = joblib.load("C:/DIKA/SEM 4/Teknologi Web Service/Obsicare/app/ML/model_clustering_makanan.pkl")
-scaler = joblib.load("C:/DIKA/SEM 4/Teknologi Web Service/Obsicare/app/ML/scaler_makanan.pkl")
+kmeans = joblib.load(MODEL_PATH)
+scaler = joblib.load(SCALER_PATH)
 
 @router.post("/tambah_data_makanan", status_code=201)
 def tambah_makanan(data: MakananCreate, db: Session = Depends(get_db)):
