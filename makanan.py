@@ -19,7 +19,7 @@ if kalori_tersisa is None:
     exit()
 
 # Load data makanan yang sudah ada clusternya
-df = pd.read_csv("makanan_dengan_cluster.csv")
+df = pd.read_csv("makanan_cluster_kmeans.csv")
 
 # Normalisasi nama makanan
 df['name'] = df['name'].str.strip()
@@ -30,9 +30,9 @@ def klaster_sesuai(sisa_kalori):
     if sisa_kalori > 1000:
         return [2]  
     elif 300 <= sisa_kalori <= 1000:
-        return [1]
+        return [0]
     else:
-        return [0]  
+        return [1]  
 
 # Fungsi filter berdasarkan cluster
 def filter_rekomendasi(df, sisa_kalori):
