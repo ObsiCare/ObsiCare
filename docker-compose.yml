@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:14
+    container_name: obsicare-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: obsicare
+      POSTGRES_DB: obsicare_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  backend:
+    build: .
+    container_name: obsicare-backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://postgres:obsicare@db:5432/obsicare_db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: obsicare-frontend
+    ports:
+      - "4000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
