@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, NavLink } from 'react-router-dom';
+import { useNavigate, NavLink, Link } from 'react-router-dom';
 import { FaChevronDown } from "react-icons/fa";
 import logo from '../assets/logo2.png';
 import tambahLogo from '../assets/tambahmakanan.png';
@@ -21,7 +21,7 @@ const TambahMakanan = () => {
         try {
             const token = localStorage.getItem("token");
             await axios.post(
-                "http://localhost:8000/makanan/makanan/tambah",
+                "http://localhost:8000/makanan/makanan/tambah_data_makanan",
                 {
                     nama,
                     kalori: parseFloat(kalori),
@@ -97,12 +97,14 @@ const TambahMakanan = () => {
         >
             {/* ✅ Navbar */}
             <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
-                <div className="container mx-auto flex justify-between items-center">
-                    <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-                    <ul className="flex gap-10 items-center font-bold text-lg tracking-widest">
+                <div className="max-w-8xl mx-auto flex flex-wrap justify-between items-center px-2 md:px-6">
+                    <Link to='/'>
+                        <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+                    </Link>
+                    <ul className="flex gap-20 items-center font-bold text-lg tracking-widest">
                         <li>
                             <NavLink
-                                to="/"
+                                to="/home2"
                                 className={({ isActive }) =>
                                     isActive
                                         ? "text-white underline underline-offset-4"
@@ -172,7 +174,7 @@ const TambahMakanan = () => {
                 <img
                     src={tambahLogo}
                     alt="Tambah Makanan"
-                    className="absolute left-30 top-10 w-24 h-24 md:w-90 md:h-30 mt-25 self-start"
+                    className="absolute left-30 top-10 w-130 md:w-130 md:h-30 mt-25 self-start"
                 />
 
                 {/* Teks tetap di tengah halaman */}

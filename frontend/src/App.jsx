@@ -1,45 +1,75 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Landing from './Pages/Landing';
 import Home from './Pages/Home';
 import Home2 from './Pages/Home2';
-import DailyMission from './Pages/DailyMissions';
-import Bmi from './Pages/Bmi';
-import Menu from './Pages/SearchMakanan';
-import DetailMenu from './Pages/DetailMenu';
+import SearchMakanan from './Pages/HomeSearch';
+import InformasiMakanan from './Pages/DetailMakanan';
 import About from './Pages/About';
-import SearchMakanan from './Pages/SearchMakanan';
+import Bmi from './Pages/Bmi';
+import PrivateRoute from './components/PrivateRoute';
+import DailyMissions from './Pages/DailyMissions';
 import TambahMakanan from './Pages/TambahMakanan';
-
-function AnimatedRoutes() {
-  const location = useLocation();
-
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Landing />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/home2" element={<Home2 />} />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/signin" element={<Login />} />
-        <Route path="/dailymissions" element={<DailyMission />} />
-        <Route path="/update-bmi" element={<Bmi />} />
-        <Route path="/searchmakanan" element={<SearchMakanan />} />
-        <Route path="/detailmenu/:nama" element={<DetailMenu />} />
-        <Route path="/about" element={<About />} /> 
-        <Route path="/tambah-makanan" element={<TambahMakanan />} />
-      </Routes>
-    </AnimatePresence>
-  );
-}
 
 function App() {
   return (
     <Router>
-      <AnimatedRoutes />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/signin" element={<Login />} />
+        <Route path="/search/:id" element={<InformasiMakanan />} />
+        <Route path="/about" element={<About />} />
+        <Route
+          path="/home2"
+          element={
+            <PrivateRoute>
+              <Home2 />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/home"
+          element={
+            <PrivateRoute>
+              <Home />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/search"
+          element={
+            <PrivateRoute>
+              <SearchMakanan />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/update-bmi"
+          element={
+            <PrivateRoute>
+              <Bmi />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/dailymissions"
+          element={
+            <PrivateRoute>
+              <DailyMissions />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/tambahdatamakanan"
+          element={
+           <PrivateRoute>
+              <TambahMakanan />
+           </PrivateRoute> 
+          }
+        />
+      </Routes>
     </Router>
   );
 }

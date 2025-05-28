@@ -12,44 +12,44 @@ import laptop from '../assets/laptop.png';
 
 const About = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showProfileDropdown, setShowProfileDropdown] = useState(false);
-  const [userName, setUserName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [avatar, setAvatar] = useState('');
-
-  const backgroundStyle = {
-    background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%)',
-  };
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    const avatar = localStorage.getItem('selectedAvatar');
-    if (token) {
-      setIsLoggedIn(true);
-      setAvatar(avatar);
-      fetch('http://localhost:8000/users/users/me', {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          setUserName(data.nama);
-          setUserEmail(data.email);
+    const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+    const [userName, setUserName] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const [avatar, setAvatar] = useState('');
+  
+    const backgroundStyle = {
+      background: 'linear-gradient(to bottom, #FFFFFF 0%, #93DCC8 50%)',
+    };
+  
+    useEffect(() => {
+      const token = localStorage.getItem('token');
+      const avatar = localStorage.getItem('selectedAvatar');
+      if (token) {
+        setIsLoggedIn(true);
+        setAvatar(avatar);
+        fetch('http://localhost:8000/users/users/me', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         })
-        .catch((err) => console.error(err));
-    }
-  }, []);
-
-  const handleLogout = () => {
-    const savedAvatar = localStorage.getItem("selectedAvatar");
-    localStorage.clear();
-    if (savedAvatar) {
-      localStorage.setItem("selectedAvatar", savedAvatar);
-    }
-    window.location.reload(); // refresh page to reflect logout
-  };
-
+          .then((res) => res.json())
+          .then((data) => {
+            setUserName(data.nama);
+            setUserEmail(data.email);
+          })
+          .catch((err) => console.error(err));
+      }
+    }, []);
+  
+    const handleLogout = () => {
+      const savedAvatar = localStorage.getItem("selectedAvatar");
+      localStorage.clear();
+      if (savedAvatar) {
+        localStorage.setItem("selectedAvatar", savedAvatar);
+      }
+      window.location.reload(); // refresh page to reflect logout
+    };
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -61,16 +61,18 @@ const About = () => {
     >
       {/* ✅ Navbar */}
       <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-          <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
+        <div className="max-w-8xl mx-auto flex flex-wrap items-center justify-between px-2 md:px-6">
+          <Link to='/'>
+            <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+          </Link>
+          <ul className="flex flex-wrap gap-20 items-center font-bold text-base md:text-xl tracking-widest">
             <li>
               <NavLink
-                to="/"
+                to="/home2"
                 className={({ isActive }) =>
                   isActive
-                    ? "underline underline-offset-4 text-white"
-                    : "hover:text-[#FFFDD0]"
+                    ? "text-white underline underline-offset-4 !text-white"
+                    : "text-white hover:text-[#FFFDD0]"
                 }
               >
                 Beranda
@@ -81,8 +83,8 @@ const About = () => {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "underline underline-offset-4 text-white"
-                    : "hover:text-[#FFFDD0]"
+                    ? "text-white underline underline-offset-4 !text-white"
+                    : "text-white hover:text-[#FFFDD0]"
                 }
               >
                 Tentang

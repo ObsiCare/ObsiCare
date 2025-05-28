@@ -102,7 +102,6 @@ const Register = () => {
                       className="w-full p-4 border border-gray-300 rounded-md bg-white"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      placeholder="masukkan nama anda"
                       required
                     />
                   </div>
@@ -116,7 +115,6 @@ const Register = () => {
                       className="w-full p-4 border border-gray-300 rounded-md bg-white"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                       placeholder="contoh@gmail.com"
                       required
                     />
                   </div>
@@ -131,7 +129,6 @@ const Register = () => {
                       value={password}
                       minLength={8}
                       onChange={(e) => setPassword(e.target.value)}
-                      placeholder="masuk kata sandi anda"
                       required
                     />
                     {password.length > 0 && password.length < 8 && (

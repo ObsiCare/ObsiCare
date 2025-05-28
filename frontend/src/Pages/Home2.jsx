@@ -20,11 +20,11 @@ const Home2 = () => {
 
   const getGreetingByTime = () => {
     const hour = new Date().getHours();
-    if (hour >= 5 && hour < 12) return 'Selamat Pagi';
-    if (hour >= 12 && hour < 15) return 'Selamat Siang';
-    if (hour >= 15 && hour < 18) return 'Selamat Sore';
-    return 'Selamat Malam';
-  };
+      if (hour >= 5 && hour < 12) return 'Selamat Pagi';
+      if (hour >= 12 && hour < 15) return 'Selamat Siang';
+      if (hour >= 15 && hour < 18) return 'Selamat Sore';
+      return 'Selamat Malam'; 
+    };
 
   useEffect(() => {
     const storedAvatar = localStorage.getItem('selectedAvatar');
@@ -41,9 +41,9 @@ const Home2 = () => {
     }
 
     if (label === "Rekomendasi Menu") {
-      navigate("/searchmakanan");
+      navigate("/search");
     }
-
+    
   };
 
   useEffect(() => {
@@ -97,12 +97,14 @@ const Home2 = () => {
       <div className="fixed inset-0 w-full h-full flex flex-col" style={backgroundStyle}>
         {/* ✅ Navbar */}
         <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
-          <div className="container mx-auto flex justify-between items-center">
-            <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-            <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
+          <div className="max-w-8xl mx-auto flex flex-wrap justify-between items-center px-2 md:px-6">
+            <Link to='/'>
+              <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+            </Link>
+            <ul className="flex flex-wrap gap-20 md:gap-20 items-center font-bold text-base md:text-xl tracking-widest">
               <li>
                 <NavLink
-                  to="/"
+                  to="/home2"
                   className={({ isActive }) =>
                     isActive
                       ? "text-white underline underline-offset-4 !text-white"
@@ -134,7 +136,7 @@ const Home2 = () => {
                 </div>
                 <AnimatePresence>
                   {showProfileDropdown && (
-                    <motion.div
+                    <motion.div 
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
@@ -172,7 +174,7 @@ const Home2 = () => {
                 <img src={avatar} alt="Avatar" className="w-full h-full object-cover" />
               ) : null}
             </div>
-            <h1 className="text-xs sm:text-sm md:text-base font-medium text-black" style={{ fontSize: "30px" }}>{getGreetingByTime()}, {userName || 'User'} !</h1>
+            <h1 className="text-xs sm:text-sm md:text-base font-medium text-black" style={{fontSize: "30px"}}>{getGreetingByTime()}, {userName || 'User'} !</h1>
           </div>
 
           {/* Kalori dan BMI */}

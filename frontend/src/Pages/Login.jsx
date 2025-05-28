@@ -49,7 +49,7 @@ const Login = () => {
       } else {
         navigate('/home');  // Arahkan ke halaman Home untuk melengkapi data
       }
-
+      
     } catch (error) {
       if (error.response && error.response.data.detail) {
         setErrorMessage(error.response.data.detail);
@@ -76,7 +76,7 @@ const Login = () => {
       </div>
 
       <motion.div
-        className="fixed inset-0 w-full h-full flex items-center justify-center"
+        className="fixed inset-0 w-full h-full flex items-center justify-center" 
         style={backgroundStyle}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -123,7 +123,6 @@ const Login = () => {
                     className="w-full p-4 border border-gray-300 rounded-md bg-white"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="contoh@gmail.com"
                     required
                   />
                   {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
@@ -139,12 +138,11 @@ const Login = () => {
                     value={password}
                     minLength={8}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="kata sandi minimal 8 karakter"
                     required
-                  />
-                  {password.length > 0 && password.length < 8 && (
-                    <p style={{ color: "red" }}>Password minimal 8 karakter</p>
-                  )}
+                    />
+                    {password.length > 0 && password.length < 8 && (
+                      <p style={{ color: "red" }}>Password minimal 8 karakter</p>
+                    )}
                 </div>
 
                 {/* Error Message */}

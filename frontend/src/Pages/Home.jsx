@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate, NavLink } from 'react-router-dom';
+import { useNavigate, NavLink, Link } from 'react-router-dom';
 import { FiEdit } from 'react-icons/fi';
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { motion, AnimatePresence } from 'framer-motion';
@@ -51,9 +51,9 @@ const Home = () => {
 
   const handleSave = async () => {
     if (!height || !weight || !age || !gender || !activityLevel) {
-      alert('Harap lengkapi semua data terlebih dahulu!');
-      return;
-    }
+    alert('Harap lengkapi semua data terlebih dahulu!');
+    return;
+  }
 
     const token = localStorage.getItem('token');
     if (!token) {
@@ -148,12 +148,14 @@ const Home = () => {
     <div style={backgroundStyle} className="min-h-screen w-full">
       {/* ✅ Navbar */}
       <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+        <div className="max-w-8xl mx-auto flex flex-wrap justify-between items-center px-2 md:px-6">
+          <Link to='/'>
+            <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+          </Link>  
           <ul className="flex flex-wrap gap-20 md:gap-20 items-center font-bold text-base md:text-xl tracking-widest">
             <li>
               <NavLink
-                to="/"
+                to="/home2"
                 className={({ isActive }) =>
                   isActive
                     ? "text-white underline underline-offset-4 !text-white"
@@ -185,7 +187,7 @@ const Home = () => {
               </div>
               <AnimatePresence>
                 {showProfileDropdown && (
-                  <motion.div
+                  <motion.div 
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}

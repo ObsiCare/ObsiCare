@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronDown } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
-import HeroImage from '../assets/Logo4.png';
+import HeroImage from '../assets/logo4.png';
 
 const Landing = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -56,17 +56,19 @@ const Landing = () => {
       style={backgroundStyle}
     >
       {/* ✅ Navbar */}
-              <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
-                <div className="container mx-auto flex justify-between items-center">
-                  <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
-                  <ul className="flex gap-25 items-center font-bold text-xl tracking-widest text-white">
+      <nav className="w-full bg-[#16A085] text-white py-1 px-4 shadow-md">
+        <div className="max-w-8xl mx-auto flex flex-wrap items-center justify-between px-2 md:px-6">
+          <Link to='/'>
+            <img src={logo} alt="Logo ObsiCare" className="h-25 w-auto" />
+          </Link>
+          <ul className="flex flex-wrap gap-20 items-center font-bold text-base md:text-xl tracking-widest text-white">
             <li>
               <NavLink
-                to="/"
+                to="/home2"
                 className={({ isActive }) =>
                   isActive
-                    ? "underline underline-offset-4 text-white"
-                    : "hover:text-[#FFFDD0]"
+                    ? "text-white underline underline-offset-4 !text-white"
+                    : "text-white hover:text-[#FFFDD0]"
                 }
               >
                 Beranda
@@ -77,8 +79,8 @@ const Landing = () => {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "underline underline-offset-4 text-white"
-                    : "hover:text-[#FFFDD0]"
+                    ? "text-white underline underline-offset-4 !text-white"
+                    : "text-white hover:text-[#FFFDD0]"
                 }
               >
                 Tentang

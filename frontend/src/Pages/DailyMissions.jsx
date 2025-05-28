@@ -122,10 +122,37 @@ const DailyMissions = () => {
                   </NavLink>
                 </li>
                 <li className="relative">
-                  <div onClick={() => setShowProfileDropdown(!showProfileDropdown)} className="flex items-center cursor-pointer hover:text-[#FFFDD0]">
-                    <span>Profil</span>
-                    <FaChevronDown className="ml-2" />
+                  <div
+                    onClick={() => setShowProfileDropdown(!showProfileDropdown)}
+                    className="flex items-center cursor-pointer hover:text-[#FFFDD0]"
+                  >
+                    Profil <FaChevronDown className="ml-2" />
                   </div>
+                  <AnimatePresence>
+                    {showProfileDropdown && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3 }}
+                        className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg w-80 z-50 p-4"
+                      >
+                        <div className="flex items-center gap-3 border-b pb-3 mb-3">
+                          <img src={avatar} alt="avatar" className="w-16 h-16 rounded-full border border-[#16A085]" />
+                          <div>
+                            <h4 className="font-bold text-base">{userName}</h4>
+                            <p className="text-sm text-gray-600">{userEmail}</p>
+                          </div>
+                        </div>
+                        <button
+                          onClick={handleLogout}
+                          className="w-full bg-[#16A085] text-white py-2 rounded-md hover:bg-[#138d77]"
+                        >
+                          Keluar
+                        </button>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </li>
               </ul>
             </div>
