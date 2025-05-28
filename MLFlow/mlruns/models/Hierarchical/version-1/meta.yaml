@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1748365807414
+current_stage: None
+description: ''
+last_updated_timestamp: 1748365807414
+name: Hierarchical
+run_id: 31391d532b6d4866a769c43b2d8cddfe
+run_link: ''
+source: mlflow-artifacts:/668185062279906287/31391d532b6d4866a769c43b2d8cddfe/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/668185062279906287/31391d532b6d4866a769c43b2d8cddfe/artifacts/model
+user_id: null
+version: 1

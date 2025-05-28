@@ -1,0 +1,1022 @@
+id,calories,proteins,fat,carbohydrate,name,kategori,kategori_kalori,cluster
+1,280.0,9.2,28.4,0.0,Abon,Lemak,Sedang,2
+2,0.0,0.0,0.2,0.0,Agar-agar,Lemak,Rendah,1
+3,45.0,1.1,0.4,10.8,Akar tonjong ,Karbo,Rendah,1
+4,37.0,4.4,0.5,3.8,Aletoge ,Protein,Rendah,1
+5,85.0,0.9,6.5,7.7,Alpukat ,Karbo,Rendah,1
+6,99.0,4.6,1.0,18.0,Andaliman ,Karbo,Rendah,1
+7,25.0,1.6,0.2,5.3,Andewi,Karbo,Rendah,1
+8,30.0,0.5,0.2,6.8,Anggur ,Karbo,Rendah,1
+9,126.0,3.4,7.9,10.3,Anyang sayur,Karbo,Sedang,1
+10,58.0,0.3,0.4,14.9,Apel,Karbo,Rendah,1
+11,57.0,0.5,0.4,12.8,Apel malang ,Karbo,Rendah,1
+12,37.0,0.8,0.5,8.3,Arbei,Karbo,Rendah,1
+13,98.0,3.9,2.6,14.8,Asinan Bogor ,Karbo,Rendah,1
+14,297.0,35.9,15.2,1.6,Sayap Crispy ,Protein,Sedang,0
+15,270.0,32.3,11.2,9.9,Ampela goreng,Protein,Sedang,0
+16,298.0,34.2,16.8,0.1,Dada Crispy,Protein,Sedang,0
+17,286.0,32.1,16.1,1.1,Paha Crispy,Protein,Sedang,0
+18,264.0,18.2,20.1,2.7,Ayam taliwang ,Lemak,Sedang,2
+19,473.0,45.2,26.3,13.9,Usus goreng,Protein,Tinggi,0
+20,113.0,17.6,4.2,0.0,Babat,Protein,Sedang,1
+21,102.9,3.3,2.7,16.3,Bacang,Karbo,Sedang,1
+22,272.0,8.7,6.7,44.1,Bakpia kue,Karbo,Sedang,2
+23,76.0,4.1,2.5,9.2,Bakso ,Karbo,Rendah,1
+24,280.0,8.2,10.2,39.0,Bakwan,Karbo,Sedang,2
+25,190.0,3.3,0.3,43.5,Kue Bantal,Karbo,Sedang,1
+26,159.0,3.1,5.8,23.5,Barongko,Karbo,Sedang,1
+27,45.0,1.4,0.2,10.3,Bawang Bombay,Karbo,Rendah,1
+28,39.0,1.5,0.3,0.2,Bawang Merah,Protein,Rendah,1
+29,95.0,4.5,0.2,23.1,Bawang Putih,Karbo,Rendah,1
+30,30.0,1.3,0.7,5.8,Bayam kukus,Karbo,Rendah,1
+31,51.0,4.6,0.5,10.0,Bayam Merah,Karbo,Rendah,1
+32,23.0,1.2,0.6,3.7,Bayam rebus,Karbo,Rendah,1
+33,36.0,3.5,0.5,6.5,Bayam segar,Karbo,Rendah,1
+34,102.0,3.7,6.7,6.9,Bayam tumis ,Karbo,Sedang,1
+35,48.0,1.4,4.2,2.6,Bayam tumis santan,Lemak,Rendah,1
+36,300.0,24.0,20.7,4.5,Bebek goreng,Protein,Sedang,0
+37,65.0,1.1,5.2,3.5,Beberuk,Lemak,Rendah,1
+38,258.0,10.6,9.5,32.5,Beef burger,Karbo,Sedang,2
+39,151.0,8.6,3.1,22.3,Beef teriyaki ,Karbo,Sedang,1
+40,132.0,9.8,1.1,20.7,Beef yakiniku ,Karbo,Sedang,1
+41,116.0,11.9,4.9,6.1,Bekasam,Protein,Sedang,1
+42,78.0,11.4,2.0,3.6,Bekasang,Protein,Rendah,1
+43,36.0,0.4,0.4,8.8,Belimbing,Karbo,Rendah,1
+44,145.0,1.2,0.4,34.2,Belitung talas kukus,Karbo,Sedang,1
+45,417.0,25.9,19.4,32.0,Belut goreng,Karbo,Tinggi,0
+46,55.0,1.4,0.2,12.8,Bengkuang,Karbo,Rendah,1
+47,98.0,1.6,0.7,20.9,Bentul (Komba)  talas ,Karbo,Rendah,1
+48,71.0,2.3,0.3,15.4,Bentul talas kukus,Karbo,Rendah,1
+49,181.0,4.0,1.2,37.3,Beras Ketan Hitam kukus,Karbo,Sedang,1
+50,166.0,3.8,1.0,34.4,Beras Ketan Hitam tape,Karbo,Sedang,1
+51,163.0,3.0,0.4,35.7,Beras Ketan Putih kukus,Karbo,Sedang,1
+52,172.0,3.0,0.5,37.5,Beras Ketan Putih tape,Karbo,Sedang,1
+53,145.0,16.3,7.0,4.1,Betok wadi ,Protein,Sedang,1
+54,154.0,3.0,4.5,25.5,Bihun Goreng ,Karbo,Sedang,1
+55,381.0,6.1,3.9,80.3,Bihun goreng instan,Karbo,Tinggi,2
+56,225.7,3.0,0.3,52.9,Bika Ambon ,Karbo,Sedang,1
+57,458.0,6.9,14.4,75.1,Biskuit,Karbo,Tinggi,2
+58,42.0,1.6,0.1,9.6,Bit,Karbo,Rendah,1
+59,51.0,0.3,0.1,12.1,Biwah segar,Karbo,Rendah,1
+60,119.0,4.4,3.5,18.3,Bongkrek (tempe bungkil),Karbo,Sedang,1
+61,186.0,11.7,9.7,13.0,Botok lamtoro,Karbo,Sedang,1
+62,249.0,3.4,0.4,58.0,Brem,Karbo,Sedang,1
+63,400.0,4.0,0.7,95.3,Brondong ,Karbo,Tinggi,2
+64,141.0,15.3,3.3,12.6,Brongkos,Protein,Sedang,1
+65,23.0,0.8,0.2,5.2,Buah Atung,Karbo,Rendah,1
+66,110.0,1.4,2.1,21.4,Buah kelenting ,Karbo,Sedang,1
+67,38.0,1.5,0.2,7.5,Buah kelor,Karbo,Rendah,1
+68,71.0,1.7,3.1,9.1,Buah Naga Merah ,Karbo,Rendah,1
+69,56.0,0.8,1.0,10.9,Buah Naga Putih ,Karbo,Rendah,1
+70,55.0,1.2,0.1,12.2,Buah negri segar,Karbo,Rendah,1
+71,60.0,1.0,60.0,13.0,Bubur ,Lemak,Rendah,1
+72,167.0,0.2,4.0,33.0,Bubur sagu,Karbo,Sedang,1
+73,156.0,2.3,0.2,15.6,Bubur Manado,Karbo,Sedang,1
+74,72.0,11.4,4.9,1.4,Bulgogi ,Protein,Rendah,1
+75,30.0,2.2,0.2,6.4,Buncis rebus,Karbo,Rendah,1
+76,42.0,2.0,1.1,6.1,Bunga turi segar,Karbo,Rendah,1
+77,333.0,29.3,3.3,50.0,Bungkil Biji Karet,Karbo,Tinggi,0
+78,336.0,37.4,13.0,30.5,Bungkil Kacang Tanah,Protein,Tinggi,0
+79,368.0,23.0,15.0,40.0,Bungkil Kelapa,Karbo,Tinggi,0
+80,106.0,4.4,6.3,7.9,Buntil ,Karbo,Sedang,1
+81,141.0,4.4,10.2,8.0,Buntil daun talas,Lemak,Sedang,1
+82,125.7,3.3,1.9,23.9,Buras ,Karbo,Sedang,1
+83,367.0,15.9,6.2,61.8,Cabai merah kering,Karbo,Tinggi,2
+84,36.0,1.0,0.3,7.3,Cabai merah segar,Karbo,Rendah,1
+85,120.0,4.7,2.4,19.9,Cabai rawit segar,Karbo,Sedang,1
+86,20.0,1.7,0.4,3.4,Caisin segar,Karbo,Rendah,1
+87,155.0,20.1,3.8,10.2,Cakalang asap,Protein,Sedang,1
+88,323.0,4.9,11.5,50.1,Cake tape,Karbo,Tinggi,2
+89,97.0,5.8,6.3,4.2,Cap cai sayur,Lemak,Rendah,1
+90,24.0,1.9,0.2,3.7,Carica papaya segar,Karbo,Rendah,1
+91,460.0,0.8,18.7,17.2,Cassava stick,Lemak,Tinggi,2
+92,116.0,3.0,0.4,28.6,Cempedak,Karbo,Sedang,1
+93,462.0,1.2,20.7,67.7,Ceriping getuk singkong,Karbo,Tinggi,2
+94,168.0,13.0,9.6,7.5,Chicken teriyaki ,Protein,Sedang,1
+95,143.0,9.8,1.4,22.8,Chikiniku ,Karbo,Sedang,1
+96,311.0,8.0,4.0,48.9,Coklat bubuk,Karbo,Tinggi,2
+97,472.0,2.0,29.8,62.7,Coklat Manis ,Karbo,Tinggi,2
+98,504.0,5.5,52.9,29.2,Coklat Pahit ,Lemak,Tinggi,2
+99,381.0,9.0,35.0,53.6,Coklat Susu ,Karbo,Tinggi,2
+100,210.0,1.6,6.6,35.8,Combro ,Karbo,Sedang,1
+101,241.0,16.0,25.0,0.0,Corned Beef,Lemak,Sedang,2
+102,96.0,6.8,5.9,3.8,Coto mangkasara kuda ,Protein,Rendah,1
+103,84.0,6.0,6.0,1.4,Coto mangkasara sapi ,Protein,Rendah,1
+104,145.0,27.0,2.3,0.0,Cue Selar Kuning,Protein,Sedang,0
+105,12.0,0.1,0.1,5.0,Cuka,Karbo,Rendah,1
+106,265.0,40.6,10.1,0.0,Cumi-cumi goreng,Protein,Sedang,0
+107,191.0,32.0,6.0,0.0,Daging Asap,Protein,Sedang,0
+108,206.0,17.1,14.8,0.0,Daging Domba,Protein,Sedang,1
+109,154.0,16.6,9.2,0.0,Daging Kambing,Protein,Sedang,1
+110,84.0,18.7,0.5,0.0,Daging Kerbau,Protein,Rendah,1
+111,118.0,18.1,4.1,0.9,Daging Kuda,Protein,Sedang,1
+112,207.0,18.8,14.0,0.0,Daging Sapi,Protein,Sedang,1
+113,29.0,1.8,0.7,5.2,Daun Bawang,Karbo,Rendah,1
+114,53.0,5.3,0.9,9.1,Daun katuk rebus,Karbo,Rendah,1
+115,61.0,6.1,0.9,10.0,Daun Kelor rebus,Karbo,Rendah,1
+116,46.0,4.0,0.5,8.9,Daun Kemangi,Karbo,Rendah,1
+117,22.0,2.1,0.5,3.6,Daun kol sawi segar,Karbo,Rendah,1
+118,23.0,3.0,0.3,3.7,Daun Koro,Karbo,Rendah,1
+119,51.0,2.5,1.1,8.0,Daun kubis segar,Karbo,Rendah,1
+120,14.0,1.3,0.3,2.3,Daun Kumak,Karbo,Rendah,1
+121,60.0,4.0,0.4,4.7,Daun Labu Siam,Karbo,Rendah,1
+122,30.0,3.6,0.6,4.5,Daun Labu Waluh,Karbo,Rendah,1
+123,87.0,8.3,1.8,14.4,Daun lamtoro segar,Karbo,Rendah,1
+124,76.0,2.8,0.2,15.8,Daun leilem segar,Karbo,Rendah,1
+125,45.0,4.7,0.5,8.1,Daun Leunca,Karbo,Rendah,1
+126,30.0,2.3,0.4,5.8,Daun Lobak,Karbo,Rendah,1
+127,40.0,3.0,0.8,7.4,Daun Lompong Tales,Karbo,Rendah,1
+128,54.0,3.7,0.3,11.8,Daun Mangkokan,Karbo,Rendah,1
+129,22.0,1.0,0.1,5.3,Daun Oyong,Karbo,Rendah,1
+130,128.0,12.0,6.5,12.4,Daun Pete Cina,Karbo,Sedang,1
+131,37.0,2.5,0.8,6.9,Daun Poh-pohan,Karbo,Rendah,1
+132,55.0,4.0,0.5,8.5,Daun Singkong lodeh,Karbo,Rendah,1
+133,31.0,3.7,0.6,4.8,Daun Singkong rebus,Karbo,Rendah,1
+134,56.0,3.1,0.3,13.0,Daun Ubi Jalar kukus,Karbo,Rendah,1
+135,260.0,2.0,15.0,53.0,Deblo ,Karbo,Sedang,2
+136,382.0,55.7,14.1,8.0,Dendeng belut goreng,Protein,Tinggi,0
+137,433.0,55.0,9.0,0.0,Dendeng Daging Sapi,Protein,Tinggi,0
+138,598.0,74.3,26.9,9.2,Dendeng mujahir goreng,Protein,Tinggi,0
+139,395.0,3.0,5.7,81.2,Dodol,Karbo,Tinggi,2
+140,298.0,3.7,2.1,65.9,Dodol bali,Karbo,Sedang,2
+141,368.0,2.6,8.6,70.0,Dodol banjarmasin,Karbo,Tinggi,2
+142,348.0,0.4,3.8,76.1,Dodol galamai,Karbo,Tinggi,2
+143,331.0,1.9,7.6,63.8,Dodol kedondong,Karbo,Tinggi,2
+144,373.0,4.3,16.5,51.9,Dodol manado,Karbo,Tinggi,2
+145,17.5,3.3,2.3,39.5,Dodonkol ,Karbo,Rendah,1
+146,63.0,1.0,0.2,16.1,Duku,Karbo,Rendah,1
+147,134.0,2.5,3.0,28.0,Durian,Karbo,Sedang,1
+148,80.0,0.5,0.6,18.2,Duwet,Karbo,Rendah,1
+149,590.0,18.5,57.0,0.0,Empal Goreng,Lemak,Tinggi,2
+150,345.0,12.0,1.5,71.5,Emping ,Karbo,Tinggi,2
+151,403.0,10.6,2.2,85.3,Emping beras,Karbo,Tinggi,2
+152,355.0,17.8,4.6,60.7,Emping komak,Karbo,Tinggi,2
+153,122.0,3.5,4.5,17.5,Encung asam ,Karbo,Sedang,1
+154,210.0,4.0,12.5,20.6,Es krim,Karbo,Sedang,1
+155,156.7,3.0,1.7,32.7,Es Krim (Coconut milk) ,Karbo,Sedang,1
+156,152.0,0.0,0.0,37.6,Es Mambo ,Karbo,Sedang,1
+157,44.8,0.0,0.0,11.3,Es Sirup ,Karbo,Rendah,1
+158,270.0,12.3,15.9,19.3,Fillet o-fish,Karbo,Sedang,2
+159,322.0,2.4,0.6,76.6,Gadung kering,Karbo,Tinggi,2
+160,137.0,6.1,3.2,21.0,Gado-gado,Karbo,Sedang,1
+161,88.0,0.8,0.3,20.9,Gadung kukus,Karbo,Rendah,1
+162,88.0,0.6,0.3,20.9,Gadung ubi kukus,Karbo,Rendah,1
+163,13.0,0.3,0.6,1.6,Gambas lodeh,Karbo,Rendah,1
+164,68.0,0.7,0.1,18.0,Gandaria,Karbo,Rendah,1
+165,100.0,0.8,0.2,23.8,Ganyong kukus,Karbo,Rendah,1
+166,100.0,0.8,0.2,23.8,Ganyong rebus,Karbo,Rendah,1
+167,77.0,0.6,0.2,18.4,Ganyong segar,Karbo,Rendah,1
+168,338.0,1.5,0.7,81.3,Gaplek,Karbo,Tinggi,2
+169,191.0,4.5,1.5,39.7,Gatep segar,Karbo,Sedang,1
+170,347.0,1.3,0.7,83.8,Gatot,Karbo,Tinggi,2
+171,195.0,0.4,1.7,44.4,Geblek,Karbo,Sedang,1
+172,389.0,0.0,0.0,91.0,Gelatine,Karbo,Tinggi,2
+173,95.0,1.5,0.1,22.4,Gembili,Karbo,Rendah,1
+174,131.0,1.1,0.2,31.3,Gembili ubi segar,Karbo,Sedang,1
+175,274.0,1.7,5.4,55.5,Gemblong,Karbo,Sedang,2
+176,407.0,6.4,28.2,32.0,Gendar goreng,Karbo,Tinggi,2
+177,35.0,1.7,0.2,7.7,Genjer segar,Karbo,Rendah,1
+178,350.0,1.4,14.4,53.6,Geplak,Karbo,Tinggi,2
+179,462.0,3.1,24.4,57.7,Geplak jahe,Karbo,Tinggi,2
+180,75.0,8.2,2.0,6.0,Gete kuah asam ,Protein,Rendah,1
+181,360.0,1.3,6.4,74.3,Getuk goreng,Karbo,Tinggi,2
+182,171.4,4.0,4.0,32.0,Getuk Lindri ,Karbo,Sedang,1
+183,144.0,1.1,0.4,34.1,Getuk pisang,Karbo,Sedang,1
+184,204.0,0.5,1.4,47.4,Getuk singkong,Karbo,Sedang,1
+185,53.0,1.6,1.6,8.8,Gudeg ,Karbo,Rendah,1
+186,160.0,3.3,9.2,16.0,Gudeg sayur,Karbo,Sedang,1
+187,368.0,0.0,0.0,95.0,Gula Aren,Karbo,Tinggi,2
+188,386.0,3.0,10.0,76.0,Gula Kelapa,Karbo,Tinggi,2
+189,394.0,0.0,0.0,94.0,Gula putih,Karbo,Tinggi,2
+190,52.0,10.0,0.5,1.8,Gulai asam keueung ,Protein,Rendah,1
+191,106.0,16.5,3.3,2.5,Gulai ikan ,Protein,Sedang,1
+192,148.0,10.0,9.8,5.0,Gulai ikan paya ,Protein,Sedang,1
+193,126.0,4.2,9.4,6.2,Gulai kambing,Lemak,Sedang,1
+194,110.0,5.9,8.2,3.2,Gulai keumamah ,Lemak,Sedang,1
+195,143.0,4.0,11.4,6.0,Gulai pakis,Lemak,Sedang,1
+196,176.0,7.3,14.9,3.2,Gulai pliek,Lemak,Sedang,1
+197,132.0,9.0,7.2,7.8,Gulai tiram ,Protein,Sedang,1
+198,192.0,12.7,10.1,12.7,Gurame asem manis ,Karbo,Sedang,1
+199,218.0,0.5,2.5,48.5,Gurandil,Karbo,Sedang,1
+200,389.0,16.9,35.0,0.3,Ham,Lemak,Tinggi,2
+201,65.0,10.0,1.0,3.5,Hangop,Protein,Rendah,1
+202,390.0,14.2,7.4,68.2,Havermout,Karbo,Tinggi,2
+203,127.0,1.2,0.5,29.5,Ubi hutan ,Karbo,Sedang,1
+204,146.0,17.7,5.9,5.6,Ikan asar merah ,Protein,Sedang,1
+205,380.0,33.6,27.5,0.0,Ikan Asin bilis goreng,Protein,Tinggi,0
+206,456.0,46.5,24.4,0.0,Ikan Asin gabus goreng,Protein,Tinggi,0
+207,348.0,18.7,29.5,0.0,Ikan Asin japuh goreng,Lemak,Tinggi,2
+208,193.0,42.0,1.5,0.0,Ikan Asin kering,Protein,Sedang,0
+209,430.0,58.2,23.6,0.0,Ikan Asin pari goreng,Protein,Tinggi,0
+210,652.0,40.4,54.3,0.0,Ikan Asin pepetek goreng,Lemak,Tinggi,0
+211,319.0,6.9,31.7,0.0,Ikan Asin sirinding goreng,Lemak,Tinggi,2
+212,430.0,33.4,32.4,0.0,Ikan Asin teri goreng,Protein,Tinggi,0
+213,198.0,19.0,13.0,0.0,Ikan Bader (Tawes),Protein,Sedang,1
+214,112.0,20.0,1.3,3.7,Ikan bambangan segar,Protein,Sedang,1
+215,129.0,20.0,4.8,0.0,Ikan Bandeng,Protein,Sedang,1
+216,296.0,17.1,20.3,11.3,Ikan bandeng presto ,Lemak,Sedang,2
+217,144.0,17.8,5.8,5.2,Ikan baung bakar,Protein,Sedang,1
+218,123.0,15.1,5.5,3.3,Ikan baung segar,Protein,Sedang,1
+219,96.0,19.0,1.7,0.0,Ikan Bawal,Protein,Rendah,1
+220,138.0,14.0,0.7,7.4,Ikan Bekasang,Protein,Sedang,1
+221,128.0,18.0,3.0,7.2,Ikan Belida bakar,Protein,Sedang,1
+222,417.0,25.9,19.4,32.0,Ikan Belut Segar goreng,Karbo,Tinggi,0
+223,109.0,17.0,4.0,0.0,Ikan Ekor Kuning,Protein,Sedang,1
+224,292.0,58.0,4.0,0.0,Ikan Gabus kering,Protein,Sedang,0
+225,74.0,25.2,1.7,0.0,Ikan Gabus ,Protein,Rendah,1
+226,267.0,23.1,19.4,0.2,Ikan gete goreng,Protein,Sedang,0
+227,298.0,46.3,3.6,20.2,Ikan hiu kering,Protein,Sedang,0
+228,302.0,70.7,1.9,0.4,Ikan kayu kering,Protein,Tinggi,0
+229,103.0,22.0,1.0,0.0,Ikan Kembung,Protein,Sedang,1
+230,252.0,19.9,19.1,0.0,Ikan Lele goreng,Protein,Sedang,2
+231,112.0,20.0,3.0,0.0,Ikan Lemuru,Protein,Sedang,1
+232,188.0,19.3,12.2,0.0,Ikan Mas goreng,Protein,Sedang,1
+233,209.0,15.2,11.3,11.8,Ikan Mas pepes,Protein,Sedang,1
+234,416.0,46.9,23.9,0.0,Ikan Mujair goreng,Protein,Tinggi,0
+235,121.0,21.7,2.8,0.8,Ikan Mujair pepes,Protein,Sedang,1
+236,152.0,17.6,6.1,6.7,Ikan Papuyu bakar,Protein,Sedang,1
+237,144.0,17.5,6.3,4.3,Ikan Patin bakar,Protein,Sedang,1
+238,240.0,21.7,7.7,20.7,Ikan sanggang masakan,Protein,Sedang,0
+239,170.0,33.4,3.0,0.0,Ikan Teri kering,Protein,Sedang,0
+240,331.0,68.7,4.2,0.0,Ikan Teri Kering tawar,Protein,Tinggi,0
+241,144.0,32.5,0.6,0.0,Ikan Teri Nasi kering,Protein,Sedang,0
+242,156.0,2.7,1.3,33.3,Jagung grontol,Karbo,Sedang,1
+243,361.0,8.7,4.5,72.4,Jagung Kuning giling,Karbo,Tinggi,2
+244,129.0,4.1,1.3,30.3,Jagung Kuning muda,Karbo,Sedang,1
+245,307.0,7.9,3.4,63.6,Jagung Kuning pipil baru,Karbo,Tinggi,2
+246,366.0,9.8,7.3,69.1,Jagung kuning pipil kering ,Karbo,Tinggi,2
+247,355.0,9.2,3.9,73.7,Jagung Kuning pipil lama,Karbo,Tinggi,2
+248,154.0,3.8,3.5,28.4,Jagung kuning pipil rebus,Karbo,Sedang,1
+249,140.0,4.7,1.3,33.1,Jagung Kuning segar,Karbo,Sedang,1
+250,355.0,9.2,3.9,73.7,Jagung kuning tepung,Karbo,Tinggi,2
+251,35.0,2.2,0.1,7.4,Jagung muda,Karbo,Rendah,1
+252,147.0,5.1,0.7,31.5,Jagung muda kuning ,Karbo,Sedang,1
+253,142.0,5.0,0.7,30.3,Jagung muda rebus,Karbo,Sedang,1
+254,175.0,1.8,1.8,35.0,Jagung Rebus ,Karbo,Sedang,1
+255,148.9,10.4,10.4,20.1,Jagung tumis,Karbo,Sedang,1
+256,374.0,9.4,2.2,79.1,Jagung titi,Karbo,Tinggi,2
+257,51.0,1.5,1.0,10.1,Jahe,Karbo,Rendah,1
+258,289.0,11.0,4.0,61.0,Jali,Karbo,Sedang,2
+259,239.0,0.5,0.6,64.5,Jam selai,Karbo,Sedang,1
+260,286.0,48.5,9.2,2.3,Jambal goreng,Protein,Sedang,0
+261,46.0,0.6,0.0,11.8,Jambu Air,Karbo,Rendah,1
+262,49.0,0.9,0.3,12.2,Jambu Biji,Karbo,Rendah,1
+263,61.0,0.9,0.3,15.4,Jambu biji putih tidak berbiji,Karbo,Rendah,1
+264,56.0,0.6,0.3,14.2,Jambu Bol,Karbo,Rendah,1
+265,64.0,0.7,0.6,15.8,Jambu Monyet buah,Karbo,Rendah,1
+266,350.0,6.2,1.4,78.2,Jampang huma mentah,Karbo,Tinggi,2
+267,45.0,2.5,3.9,0.0,Jamur Coklat ,Lemak,Rendah,1
+268,296.0,9.4,1.1,62.0,Jamur encik,Karbo,Sedang,2
+269,294.0,16.0,0.9,64.6,Jamur kuping kering,Karbo,Sedang,2
+270,21.0,3.8,0.6,0.9,Jamur kuping segar,Protein,Rendah,1
+271,30.0,3.5,0.2,4.0,Jamur merang segar,Karbo,Rendah,1
+272,48.0,2.8,4.1,2.9,Jamur Putih,Lemak,Rendah,1
+273,48.0,1.9,3.2,2.8,Jamur sagu,Lemak,Rendah,1
+274,30.0,1.9,0.1,5.5,Jamur tiram segar,Karbo,Rendah,1
+275,48.0,0.6,0.2,12.4,Jeruk Bali,Karbo,Rendah,1
+276,61.0,0.8,0.2,14.1,Jeruk banjar ,Karbo,Rendah,1
+277,44.0,0.8,0.3,10.9,Jeruk Garut,Karbo,Rendah,1
+278,39.0,0.3,0.3,8.9,Jeruk Kalamansi ,Karbo,Rendah,1
+279,45.0,0.9,0.2,11.2,Jeruk Manis,Karbo,Rendah,1
+280,37.0,0.8,0.1,12.3,Jeruk Nipis,Karbo,Rendah,1
+281,49.0,0.7,0.2,11.1,Jeruk ragi ,Karbo,Rendah,1
+282,32.0,1.9,0.3,7.1,Jotang,Karbo,Rendah,1
+283,250.0,2.6,2.5,35.4,Kabuto,Karbo,Sedang,1
+284,356.0,20.5,4.1,61.6,Kacang Andong,Karbo,Tinggi,2
+285,330.0,23.8,1.4,60.2,Kacang Arab,Karbo,Tinggi,0
+286,533.0,27.8,38.1,28.8,Kacang atom,Lemak,Tinggi,0
+287,341.0,30.4,3.2,51.3,Kacang babi kering,Karbo,Tinggi,0
+288,400.0,34.4,16.9,34.1,Kacang belimbing kering,Protein,Tinggi,0
+289,204.0,16.9,8.8,17.5,Kacang Belimbing rebus,Karbo,Sedang,1
+290,212.0,17.5,10.0,12.9,Kacang Belimbing tempe,Protein,Sedang,1
+291,118.0,4.4,1.5,21.6,Kacang beracun segar,Karbo,Sedang,1
+292,479.0,12.7,23.2,58.9,Kacang Bogor goreng,Karbo,Tinggi,2
+293,370.0,16.0,6.0,65.0,Kacang bogor kering,Karbo,Tinggi,2
+294,161.0,7.7,2.8,27.1,Kacang Bogor rebus,Karbo,Sedang,1
+295,165.0,7.7,3.1,27.4,Kacang bogor segar,Karbo,Sedang,1
+296,331.0,25.0,1.0,58.0,Kacang Endel biji,Karbo,Tinggi,0
+297,129.0,12.4,0.7,18.3,Kacang ercis segar,Karbo,Sedang,1
+298,336.0,23.1,1.7,59.5,kacang galing segar,Karbo,Tinggi,0
+299,516.0,14.7,31.1,44.4,Kacang goyang,Karbo,Tinggi,2
+300,336.0,20.7,1.4,62.0,Kacang Gude biji,Karbo,Tinggi,2
+301,316.0,20.7,1.0,58.0,Kacang gude biji kering,Karbo,Tinggi,2
+302,114.0,7.0,0.6,20.8,Kacang Gude biji muda,Karbo,Sedang,1
+303,123.0,8.4,0.6,1.8,Kacang Gude muda,Protein,Sedang,1
+304,147.0,9.0,0.5,27.5,Kacang gude rebus,Karbo,Sedang,1
+305,323.0,22.9,1.5,56.8,Kacang hijau kering,Karbo,Tinggi,0
+306,109.0,8.7,0.5,18.3,kacang hijau rebus,Karbo,Sedang,1
+307,346.0,16.6,1.7,66.1,Kacang hitam kering,Karbo,Tinggi,2
+308,345.0,22.2,1.2,62.9,Kacang Ijo,Karbo,Tinggi,0
+309,445.0,11.0,11.0,65.5,Kacang Kapri Goreng ,Karbo,Tinggi,2
+310,98.0,6.7,0.4,17.7,Kacang Kapri muda,Karbo,Rendah,1
+311,286.0,30.2,15.6,30.1,Kacang Kedelai basah,Protein,Sedang,0
+312,521.0,32.2,37.7,22.9,Kacang kedelai goreng,Lemak,Tinggi,0
+313,381.0,40.4,16.7,24.9,Kacang kedelai kering,Protein,Tinggi,0
+314,75.0,4.1,2.1,10.7,Kacang Kedelai kukus,Karbo,Rendah,1
+315,189.0,20.2,8.2,12.7,Kacang kedelai rebus,Protein,Sedang,1
+316,286.0,30.2,15.6,30.1,Kacang kedelai ,Protein,Sedang,0
+317,327.0,16.4,4.3,55.8,Kacang komak ,Karbo,Tinggi,2
+318,355.0,17.0,2.5,66.0,Kacang kuning kering,Karbo,Tinggi,2
+319,346.0,16.5,1.5,66.6,Kacang lebui ,Karbo,Tinggi,2
+320,22.0,1.1,1.0,3.4,Kacang mekah polong ,Karbo,Rendah,1
+321,344.0,16.7,2.1,64.6,Kacang mentega kering,Karbo,Tinggi,2
+322,336.0,23.1,1.7,59.5,Kacang Merah,Karbo,Tinggi,0
+323,350.0,13.9,3.0,66.9,Kacang merah /banda kering,Karbo,Tinggi,2
+324,314.0,22.1,1.1,56.2,Kacang merah kering,Karbo,Tinggi,0
+325,158.0,10.3,0.9,28.2,Kacang Merah kering rebus,Karbo,Sedang,1
+326,171.0,11.0,2.2,28.0,Kacang merah ,Karbo,Sedang,1
+327,144.0,10.0,1.0,24.7,Kacang Merah rebus,Karbo,Sedang,1
+328,280.0,16.7,1.6,63.2,Kacang merah tua kering,Karbo,Sedang,2
+329,629.0,20.4,56.3,19.8,Kacang mete goreng,Lemak,Tinggi,2
+330,616.0,16.3,48.4,28.7,Kacang mete segar,Lemak,Tinggi,2
+331,480.0,18.4,19.1,58.5,Kacang negara,Karbo,Tinggi,2
+332,44.0,2.7,0.3,7.8,Kacang Panjang,Karbo,Rendah,1
+333,357.0,17.3,1.5,70.0,Kacang Panjang biji,Karbo,Tinggi,2
+334,39.0,3.0,0.6,7.6,Kacang Panjang kukus,Karbo,Rendah,1
+335,150.0,2.5,12.5,7.0,Kacang Panjang tumis,Lemak,Sedang,1
+336,37.0,3.1,0.2,7.9,Kacang ranti polong,Karbo,Rendah,1
+337,484.0,8.8,26.1,57.7,Kacang sukro,Karbo,Tinggi,2
+338,488.0,25.6,25.6,59.6,Kacang Sukro Putih ,Karbo,Tinggi,0
+339,535.0,27.8,38.1,28.8,Kacang Tanah atom,Lemak,Tinggi,0
+340,564.0,25.5,44.4,25.5,Kacang tanah goreng,Lemak,Tinggi,0
+341,561.0,25.5,43.8,26.0,Kacang Tanah kacang sari,Lemak,Tinggi,0
+342,525.0,27.9,42.7,17.4,Kacang tanah kering,Lemak,Tinggi,0
+343,385.0,14.0,31.0,13.0,Kacang Tanah Rebus ,Lemak,Tinggi,2
+344,360.0,13.5,31.2,12.8,Kacang Tanah rebus berkulit,Lemak,Tinggi,2
+345,513.0,17.5,32.5,44.3,Kacang Tanah rempeyek,Karbo,Tinggi,2
+346,569.0,28.8,48.4,15.8,Kacang Tanah sangan berselaput,Lemak,Tinggi,0
+347,559.0,26.9,44.2,23.6,Kacang tanah sangan tanpa selaput,Lemak,Tinggi,0
+348,561.0,25.5,43.8,26.0,Kacang tanah sari,Lemak,Tinggi,0
+349,748.0,20.8,20.8,124.8,Kacang Telur ,Karbo,Tinggi,2
+350,331.0,24.4,1.9,56.6,Kacang tolo kering,Karbo,Tinggi,0
+351,138.0,10.7,1.1,22.6,Kacang tolo rebus,Karbo,Sedang,1
+352,342.0,22.9,1.4,61.6,Kacang Tunggak,Karbo,Tinggi,0
+353,138.0,10.7,1.1,22.6,Kacang Tunggak rebus,Karbo,Sedang,1
+354,451.0,11.2,20.2,59.7,Kacang Tunggak rempeyek,Karbo,Tinggi,2
+355,351.0,12.2,1.2,72.9,Kacang tunis kering,Karbo,Tinggi,2
+356,358.0,23.4,2.4,60.6,Kacang uci kering,Karbo,Tinggi,0
+357,354.0,12.8,1.8,69.3,Kacang urei kering,Karbo,Tinggi,2
+358,110.0,4.5,6.9,7.1,Kadada katembe,Karbo,Sedang,1
+359,413.0,28.7,19.8,29.8,Kaholeo ,Karbo,Tinggi,0
+360,92.0,20.0,0.7,0.0,Kakap,Protein,Rendah,1
+361,66.0,2.8,6.8,3.4,Kalakai,Lemak,Rendah,1
+362,163.0,16.5,9.0,4.1,Kalio jeroan ,Protein,Sedang,1
+363,122.0,13.8,5.7,3.9,Kalio kikil (tunjang) ,Protein,Sedang,1
+364,157.0,8.1,8.8,11.4,Kalio otak masakan,Karbo,Sedang,1
+365,193.0,10.6,12.4,9.7,Kalio telur masakan,Lemak,Sedang,1
+366,30.0,3.2,0.7,4.7,Kangkung kukus,Karbo,Rendah,1
+367,22.0,2.5,0.6,3.1,Kangkung rebus,Karbo,Rendah,1
+368,43.0,1.8,0.2,8.4,Kangkung tondano,Karbo,Rendah,1
+369,52.0,1.8,3.6,3.0,Kangkung tumis,Lemak,Rendah,1
+370,38.0,2.4,2.0,2.6,Kaparende sayur,Karbo,Rendah,1
+371,42.0,3.3,0.2,9.6,Kapri Muda,Karbo,Rendah,1
+372,41.0,2.0,0.3,7.8,Kapurung,Karbo,Rendah,1
+373,158.0,4.4,3.2,27.8,Kapusa,Karbo,Sedang,1
+374,25.0,2.3,0.2,3.5,Karawila,Karbo,Rendah,1
+375,146.7,5.9,5.9,19.7,Karedok ,Karbo,Sedang,1
+376,92.0,2.2,3.3,14.1,Karedok sayur,Karbo,Rendah,1
+377,292.0,11.2,11.2,2.8,Karoket ,Protein,Sedang,2
+378,275.0,12.6,14.8,54.6,Katul Beras,Karbo,Sedang,2
+379,356.0,9.0,8.5,64.5,Katul Jagung,Karbo,Tinggi,2
+380,120.0,3.5,2.5,20.8,Kawista ,Karbo,Sedang,1
+381,46.0,5.7,1.3,9.0,Kecap,Karbo,Rendah,1
+382,464.0,1.2,18.6,73.0,Kecimpring singkong goreng,Karbo,Tinggi,2
+383,405.0,32.8,17.0,36.5,Kecipir biji,Karbo,Tinggi,0
+384,35.0,2.9,0.2,0.8,Kecipir buah muda,Protein,Rendah,1
+385,32.0,2.9,0.2,5.8,Kecipir muda ,Karbo,Rendah,1
+386,34.0,0.9,1.0,6.7,Kecombrang ,Karbo,Rendah,1
+387,47.0,0.5,0.2,10.4,Kedondong  ,Karbo,Rendah,1
+388,326.0,22.8,20.3,13.1,Keju,Protein,Tinggi,0
+389,590.0,27.0,49.0,20.9,Keju Kacang Tanah,Lemak,Tinggi,0
+390,623.0,2.0,52.1,36.5,Kelapa hutan kering,Lemak,Tinggi,2
+391,17.0,0.2,0.1,3.8,Kelapa Muda air,Karbo,Rendah,1
+392,68.0,1.0,0.9,14.0,Kelapa Muda daging,Karbo,Rendah,1
+393,180.0,4.0,15.0,10.0,Kelapa Setengah Tua daging,Lemak,Sedang,1
+394,359.0,3.4,34.7,14.0,Kelapa Tua daging,Lemak,Tinggi,2
+395,214.0,5.4,5.4,40.2,Kelepon ,Karbo,Sedang,1
+396,111.0,1.5,0.3,27.2,Kelewih,Karbo,Sedang,1
+397,380.0,48.9,13.8,23.3,Kembang tahu,Protein,Tinggi,0
+398,44.0,1.8,0.6,9.6,Kembang Turi,Karbo,Rendah,1
+399,636.0,19.0,63.0,8.0,Kemiri,Lemak,Tinggi,2
+400,657.0,15.0,66.0,13.0,Kenari,Lemak,Tinggi,2
+401,616.0,13.9,56.2,13.7,Kenari banda kering,Lemak,Tinggi,2
+402,83.0,2.0,0.1,19.1,Kentang,Karbo,Rendah,1
+403,142.0,0.9,0.4,33.7,Kentang Hitam,Karbo,Sedang,1
+404,64.0,12.0,1.0,2.0,Keong,Protein,Rendah,1
+405,204.0,2.6,20.0,4.0,Kepala Susu (Krim),Lemak,Sedang,1
+406,151.0,13.8,3.8,14.1,Kepiting,Karbo,Sedang,1
+407,59.0,18.0,1.1,3.6,Kerang,Protein,Rendah,1
+408,393.0,38.9,13.3,29.4,Kerang asap mentah,Protein,Tinggi,0
+409,586.0,4.9,40.6,50.2,Keripik bayam,Karbo,Tinggi,2
+410,446.0,2.8,14.5,76.0,Keripik gadung,Karbo,Tinggi,2
+411,448.0,2.7,18.8,67.1,Keripik kentang,Karbo,Tinggi,2
+412,485.0,1.7,22.2,69.7,Keripik lampung,Karbo,Tinggi,2
+413,598.0,8.3,43.8,42.6,Keripik oncom,Lemak,Tinggi,2
+414,478.0,0.9,20.7,72.0,Keripik singkong,Karbo,Tinggi,2
+415,481.0,2.2,19.7,73.6,Keripik singkong berbumbu,Karbo,Tinggi,2
+416,581.0,12.1,40.6,41.7,Keripik tempe,Karbo,Tinggi,2
+417,542.0,40.3,42.4,11.6,Keripik tempe abadi murni,Lemak,Tinggi,0
+418,510.0,12.3,27.9,52.4,Keripik tempe abadi sedang,Karbo,Tinggi,2
+419,529.0,20.8,31.7,40.2,Keripik tempe abadi telur,Karbo,Tinggi,2
+420,486.0,0.2,23.9,67.6,Keripik ubi,Karbo,Tinggi,2
+421,26.0,1.7,0.4,3.8,Kerokot ,Karbo,Rendah,1
+422,350.0,0.5,0.2,85.9,Kerupuk Aci,Karbo,Tinggi,2
+423,444.0,6.9,14.6,71.3,Kerupuk cumi goreng,Karbo,Tinggi,2
+424,342.0,16.0,0.4,65.6,Kerupuk Ikan berpati,Karbo,Tinggi,2
+425,325.0,1.8,0.4,78.5,Kerupuk kemplang,Karbo,Tinggi,2
+426,504.0,5.6,28.1,57.1,Kerupuk kemplang goreng,Karbo,Tinggi,2
+427,356.0,9.7,1.1,76.9,Kerupuk kemplang panggang,Karbo,Tinggi,2
+428,422.0,83.0,4.0,0.0,Kerupuk Kulit kerbau,Protein,Tinggi,0
+429,345.0,12.0,1.5,71.5,Kerupuk Melinjo mentah,Karbo,Tinggi,2
+430,431.0,11.1,16.2,63.0,Kerupuk Melinjo tebal goreng asin,Karbo,Tinggi,2
+431,439.0,10.0,16.4,65.7,Kerupuk Melinjo tebal goreng manis,Karbo,Tinggi,2
+432,485.0,11.5,24.5,59.1,Kerupuk Melinjo tipis goreng,Karbo,Tinggi,2
+433,476.0,0.1,21.1,71.3,Kerupuk mie kuning goreng,Karbo,Tinggi,2
+434,46.7,17.3,17.3,81.3,Kerupuk Sayong ,Karbo,Rendah,1
+435,340.0,30.0,30.0,52.0,Kerupuk Udang ,Karbo,Tinggi,0
+436,359.0,17.2,68.2,332.0,Kerupuk Udang berpati,Karbo,Tinggi,2
+437,477.0,4.7,20.5,68.5,Kerupuk udang goreng,Karbo,Tinggi,2
+438,588.0,53.7,40.9,1.2,Kerupuk urat,Protein,Tinggi,0
+439,78.0,0.8,0.4,20.0,Kesemek,Karbo,Rendah,1
+440,181.0,4.0,1.2,37.3,Ketan hitam matang,Karbo,Sedang,1
+441,163.0,3.0,0.4,35.7,Ketan putih matang,Karbo,Sedang,1
+442,340.0,11.0,11.0,54.0,Ketapang ,Karbo,Tinggi,2
+443,157.0,0.8,0.3,37.9,Ketela Pohon Kuning,Karbo,Sedang,1
+444,154.0,1.0,0.3,36.8,Ketela singkong ,Karbo,Sedang,1
+445,153.0,1.2,0.3,36.4,Ketela pohon kukus,Karbo,Sedang,1
+446,12.0,0.7,0.1,2.7,Ketimun,Karbo,Rendah,1
+447,9.0,0.5,0.1,1.9,Ketimun madura ,Karbo,Rendah,1
+448,153.0,7.9,7.7,13.0,Ketoprak,Karbo,Sedang,1
+449,404.0,14.1,16.1,54.2,Ketumbar,Karbo,Tinggi,2
+450,212.0,4.0,4.6,38.6,Ketupat ketan,Karbo,Sedang,1
+451,109.6,2.6,2.6,18.6,Ketupat Tahu ,Karbo,Sedang,1
+452,86.0,1.6,0.2,13.0,Kokosan,Karbo,Rendah,1
+453,99.0,3.3,0.1,21.2,Komak polong ,Karbo,Rendah,1
+454,25.0,2.4,0.2,4.9,Kool Kembang,Karbo,Rendah,1
+455,24.0,1.4,0.2,5.3,Kool Merah kool putih,Karbo,Rendah,1
+456,352.0,17.4,1.3,69.0,Kopi bagian yang larut,Karbo,Tinggi,2
+457,129.0,12.3,0.5,35.0,Kopi bubuk instant,Karbo,Sedang,1
+458,356.0,20.5,4.1,61.6,Koro andong kering,Karbo,Tinggi,2
+459,332.0,24.0,3.0,55.0,Koro Benguk biji,Karbo,Tinggi,0
+460,141.0,10.2,1.3,23.2,Koro Benguk tempe,Karbo,Sedang,1
+461,125.0,8.3,0.7,22.1,Koro Kerupuk biji,Karbo,Sedang,1
+462,33.0,2.7,0.2,7.9,Koro Loke biji,Karbo,Rendah,1
+463,344.0,12.5,2.1,69.4,Koro Roway biji,Karbo,Tinggi,2
+464,338.0,22.2,1.5,61.0,Koro Wedus biji,Karbo,Tinggi,0
+465,38.0,3.0,0.3,7.9,Koro Wedus buah muda,Karbo,Rendah,1
+466,46.0,3.0,0.3,7.9,Koro wedus polong,Karbo,Rendah,1
+467,46.0,2.2,1.5,6.0,Kotiu hinela tawang nggole,Karbo,Rendah,1
+468,366.0,4.2,4.3,77.5,Koya,Karbo,Tinggi,2
+469,370.0,8.0,1.0,82.2,Koya mirasa,Karbo,Tinggi,2
+470,315.0,2.1,1.4,73.5,Kranji segar,Karbo,Tinggi,2
+471,542.0,40.3,42.4,11.5,Kripik Tempe Goreng ,Lemak,Tinggi,0
+472,21.0,1.7,0.4,3.8,Krokot,Karbo,Rendah,1
+473,45.0,2.2,0.3,10.3,Kucai,Karbo,Rendah,1
+474,42.0,3.8,0.6,7.8,Kucai Muda (Lokio),Karbo,Rendah,1
+475,440.0,3.8,18.5,64.5,Kue ali,Karbo,Tinggi,2
+476,186.7,1.6,1.6,39.6,Kue Apem ,Karbo,Sedang,1
+477,338.0,1.5,1.2,80.3,Kue bangket,Karbo,Tinggi,2
+478,240.0,1.0,4.0,54.0,Kue Bugis ,Karbo,Sedang,1
+479,425.0,1.6,8.8,84.6,Kue jahe,Karbo,Tinggi,2
+480,591.0,5.6,42.1,47.5,Kue kelapa,Karbo,Tinggi,2
+481,366.0,4.2,4.3,7.9,Kue Koya ,Karbo,Tinggi,2
+482,291.0,3.6,11.1,44.1,Kue lumpur,Karbo,Sedang,2
+483,182.0,1.0,1.0,40.4,Kue mangkok ,Karbo,Sedang,1
+484,126.7,0.7,0.7,57.3,Kue Pacar Cina ,Karbo,Sedang,1
+485,296.0,1.4,1.4,66.4,Kue Pia ,Karbo,Sedang,2
+486,304.0,5.3,7.0,54.9,Kue putu cangkir,Karbo,Tinggi,2
+487,217.0,1.2,0.5,53.2,Kue putu singkong,Karbo,Sedang,1
+488,393.3,2.7,2.7,79.3,Kue Satu ,Karbo,Tinggi,2
+489,380.0,1.0,1.0,92.0,Kue Semprong ,Karbo,Tinggi,2
+490,221.0,7.5,10.2,24.8,Kue sus,Karbo,Sedang,1
+491,180.0,5.0,5.0,32.0,Kue Talam ,Karbo,Sedang,1
+492,512.0,26.0,26.0,60.4,Kue Tambang ,Karbo,Tinggi,0
+493,247.0,2.9,4.2,49.5,Kue thipan,Karbo,Sedang,1
+494,515.0,30.6,42.1,13.8,Kwaci,Lemak,Tinggi,0
+495,242.0,19.0,17.0,3.0,Kwark (Quark),Protein,Sedang,2
+496,17.0,0.6,0.2,3.8,Labu Air,Karbo,Rendah,1
+497,51.0,1.7,0.5,10.0,Labu kuning segar,Karbo,Rendah,1
+498,26.0,0.6,0.1,6.7,Labu Siam,Karbo,Rendah,1
+499,32.0,1.1,0.1,6.6,Labu waluh segar,Karbo,Rendah,1
+500,166.3,2.7,3.9,29.5,Laksa ,Karbo,Sedang,1
+501,85.0,5.7,0.3,15.4,Lamtoro (pete cina) biji muda,Karbo,Rendah,1
+502,148.0,10.6,0.5,26.2,Lamtoro biji tua,Karbo,Sedang,1
+503,142.0,11.0,2.5,20.4,Lamtoro tempe,Karbo,Sedang,1
+504,367.0,46.4,5.4,32.5,Lamtoro var. gung tanpa kulit,Protein,Tinggi,0
+505,336.0,23.8,1.2,59.7,Lamtoro var. lokal dengan kulit,Karbo,Tinggi,0
+506,56.0,0.9,0.2,14.3,Langsat,Karbo,Rendah,1
+507,34.0,2.2,0.3,5.5,Lantar segar,Karbo,Rendah,1
+508,422.0,0.9,10.8,80.4,Lanting getuk,Karbo,Tinggi,2
+509,389.0,6.6,15.7,55.5,Lapis legit,Karbo,Tinggi,2
+510,174.0,17.0,10.0,3.0,Lawar babi masakan,Protein,Sedang,1
+511,141.0,23.0,1.5,7.6,Lawar penyu masakan,Protein,Sedang,1
+512,159.0,5.0,10.9,10.1,Lawara jangang masakan,Lemak,Sedang,1
+513,207.0,7.4,15.4,9.6,Lawara penjah masakan,Lemak,Sedang,1
+514,405.0,4.8,5.1,84.9,Ledre pisang,Karbo,Tinggi,2
+515,15.0,1.0,0.4,1.9,Lema/ Rebung asam,Karbo,Rendah,1
+516,902.0,0.0,100.0,0.0,Lemak Babi,Lemak,Tinggi,2
+517,630.0,9.1,65.0,1.1,Lemak Babi (Bacon),Lemak,Tinggi,2
+518,372.0,12.0,29.4,14.4,Lemak ikan,Lemak,Tinggi,2
+519,818.0,1.5,90.0,0.0,Lemak Kerbau,Lemak,Tinggi,2
+520,34.0,0.5,0.8,6.2,Lemon segar,Karbo,Rendah,1
+521,36.0,0.0,0.0,10.0,Lemon Squasih,Karbo,Rendah,1
+522,30.0,0.0,0.0,8.0,Lemonade,Karbo,Rendah,1
+523,221.3,3.8,3.6,43.4,Lemper ,Karbo,Sedang,1
+524,320.0,3.5,5.7,63.7,Lempog durian,Karbo,Tinggi,2
+525,181.0,2.8,1.2,39.8,Lepok/Ubi rumput,Karbo,Sedang,1
+526,33.0,1.9,0.1,7.4,Leunca buah,Karbo,Rendah,1
+527,240.0,7.8,0.5,51.3,Leupeut Ketan ,Karbo,Sedang,1
+528,387.0,16.0,22.0,3.0,Leverwost (sosis hati),Lemak,Tinggi,2
+529,79.0,2.3,5.2,5.8,Lilin bungkus gedi,Karbo,Rendah,1
+530,19.0,0.9,0.1,4.2,Lobak,Karbo,Rendah,1
+531,217.0,11.0,1.7,5.1,Lokan segar,Protein,Sedang,1
+532,27.0,0.4,0.2,6.0,Lontar segar,Karbo,Rendah,1
+533,163.3,2.8,2.2,33.0,Lopis ,Karbo,Sedang,1
+534,38.0,1.1,0.3,7.6,Lumai/Leunca segar,Karbo,Rendah,1
+535,164.0,1.8,2.1,34.5,Lupis ketan,Karbo,Sedang,1
+536,294.0,0.3,0.0,79.5,Madu,Karbo,Sedang,2
+537,363.0,8.7,0.4,78.7,Makaroni,Karbo,Tinggi,2
+538,63.0,2.4,0.4,12.4,Mangga benggala segar,Karbo,Rendah,1
+539,44.0,0.7,0.2,11.2,Mangga Gedong,Karbo,Rendah,1
+540,63.0,0.5,0.2,16.7,Mangga Golek,Karbo,Rendah,1
+541,46.0,0.4,0.2,11.9,Mangga Harum Manis,Karbo,Rendah,1
+542,72.0,0.8,0.2,18.7,Mangga Indramayu,Karbo,Rendah,1
+543,56.0,0.4,0.2,14.6,Mangga Kopek,Karbo,Rendah,1
+544,86.0,0.7,0.5,19.8,Mangga kwini segar,Karbo,Rendah,1
+545,133.0,1.0,0.1,32.1,Mangga manalagi segar,Karbo,Sedang,1
+546,59.0,0.5,0.4,15.1,Mangga Muda,Karbo,Rendah,1
+547,52.0,0.7,0.0,12.3,Mangga segar,Karbo,Rendah,1
+548,63.0,0.6,0.6,15.6,Manggis,Karbo,Rendah,1
+549,720.0,0.6,81.0,0.4,Margarin,Lemak,Tinggi,2
+550,144.0,3.5,1.2,29.8,Markisa segar,Karbo,Sedang,1
+551,217.0,2.5,1.0,49.6,Markisa squash,Karbo,Sedang,1
+552,265.3,4.7,5.5,49.3,Martabak  manis,Karbo,Sedang,2
+553,153.0,4.5,4.2,24.3,Martabak india,Karbo,Sedang,1
+554,278.0,5.1,8.6,45.0,Martabak mesir,Karbo,Sedang,2
+555,200.0,8.9,5.1,29.5,Martabak Telur ,Karbo,Sedang,1
+556,369.0,2.1,7.0,74.1,Masekat,Karbo,Tinggi,2
+557,90.0,1.2,0.1,21.1,Matoa segar,Karbo,Rendah,1
+558,276.0,0.0,0.1,71.0,Melase,Karbo,Sedang,2
+559,66.0,5.0,0.7,13.3,Melinjo,Karbo,Rendah,1
+560,37.0,0.6,0.4,7.8,Melon segar,Karbo,Rendah,1
+561,322.0,55.8,2.0,22.7,Menjangan daging dendeng mentah,Protein,Tinggi,0
+562,725.0,0.5,81.6,1.4,Mentega,Lemak,Tinggi,2
+563,65.0,1.7,0.2,16.1,Menteng,Karbo,Rendah,1
+564,359.0,11.5,6.8,64.4,Merica,Karbo,Tinggi,2
+565,88.0,0.6,3.3,14.0,Mi basah,Karbo,Rendah,1
+566,71.0,0.2,0.8,15.9,Mi golosor,Karbo,Rendah,1
+567,339.0,10.0,1.7,6.3,Mi kering,Protein,Tinggi,2
+568,113.0,3.0,3.2,18.1,Mie aceh rebus,Karbo,Sedang,1
+569,102.0,6.2,3.9,10.5,Mie ayam,Karbo,Sedang,1
+570,114.0,5.3,3.0,16.4,Mie bakso,Karbo,Sedang,1
+571,86.0,0.6,3.3,14.0,Mie basah,Karbo,Rendah,1
+572,353.0,0.3,0.0,88.0,Mie Bendo,Karbo,Tinggi,2
+573,102.0,3.0,2.1,17.8,Mie celon,Karbo,Sedang,1
+574,468.0,7.6,20.4,62.4,Mie Goreng ,Karbo,Tinggi,2
+575,337.0,7.9,11.8,50.0,Mie kering,Karbo,Tinggi,2
+576,105.0,5.9,4.9,9.4,Mie pangsit basah,Karbo,Sedang,1
+577,190.0,0.2,0.4,46.5,Mie Sagu,Karbo,Sedang,1
+578,902.0,0.0,100.0,0.0,Minyak Ikan,Lemak,Tinggi,2
+579,902.0,0.0,100.0,0.0,Minyak Kacang Tanah,Lemak,Tinggi,2
+580,883.0,0.0,99.9,0.0,Minyak kedelai,Lemak,Tinggi,2
+581,870.0,1.0,98.0,0.0,Minyak Kelapa,Lemak,Tinggi,2
+582,902.0,0.0,100.0,0.0,Minyak Kelapa Sawit,Lemak,Tinggi,2
+583,902.0,0.0,100.0,0.0,Minyak Wijen,Lemak,Tinggi,2
+584,884.0,0.0,100.0,0.0,Minyak Zaitun,Lemak,Tinggi,2
+585,345.0,8.5,2.2,78.0,Misoa,Karbo,Tinggi,2
+586,218.0,0.8,16.0,50.2,Misro ,Karbo,Sedang,1
+587,128.0,8.0,10.0,1.3,Moon tahu,Lemak,Sedang,1
+588,33.0,2.3,0.5,4.7,Mostarda metan -sawi,Karbo,Rendah,1
+589,330.0,17.8,23.4,12.1,Mujahir acar kuning masakan,Lemak,Tinggi,2
+590,478.0,38.3,33.9,5.1,Naan maran sapi masakan,Protein,Tinggi,0
+591,52.0,0.4,0.2,13.7,Nanas,Karbo,Rendah,1
+592,58.0,0.7,0.2,13.3,Nanas palembang segar,Karbo,Rendah,1
+593,165.0,4.2,0.1,36.7,Nangka biji,Karbo,Sedang,1
+594,106.0,1.2,0.3,27.6,Nangka masak di pohon,Karbo,Sedang,1
+595,51.0,2.0,0.4,11.3,Nangka Muda,Karbo,Rendah,1
+596,180.0,3.0,0.3,39.8,Nasi,Karbo,Sedang,1
+597,149.0,2.8,0.4,32.5,Nasi beras merah,Karbo,Sedang,1
+598,192.0,3.8,8.8,24.4,Nasi gemuk,Karbo,Sedang,1
+599,276.0,3.2,3.2,30.2,Nasi Goreng ,Karbo,Sedang,2
+600,190.0,4.7,7.5,26.0,Nasi gurih,Karbo,Sedang,1
+601,357.0,8.8,0.5,79.5,Nasi jagung,Karbo,Tinggi,2
+602,207.0,3.5,5.0,37.1,Nasi minyak,Karbo,Sedang,1
+603,155.0,10.3,4.2,19.1,Nasi rames,Karbo,Sedang,1
+604,120.0,2.4,0.4,26.0,Nasi tim,Karbo,Sedang,1
+605,253.3,4.3,21.0,11.7,Nasi Uduk ,Lemak,Sedang,2
+606,196.0,14.5,8.3,15.9,Nasu likku masakan,Karbo,Sedang,1
+607,600.0,14.0,41.7,42.0,Noga Kacang Tanah ,Karbo,Tinggi,2
+608,387.0,5.3,7.6,74.3,Nopia spesial,Karbo,Tinggi,2
+609,9.0,2.1,6.0,7.1,Olah-olah,Karbo,Rendah,1
+610,187.0,13.0,6.0,22.6,Oncom,Karbo,Sedang,1
+611,376.0,14.9,6.0,65.7,Oncom ampas kacang hijau,Karbo,Tinggi,2
+612,363.3,19.3,19.3,40.3,Oncom Goreng ,Karbo,Tinggi,2
+613,284.0,12.0,14.4,13.6,Oncom Hitam Goreng ,Lemak,Sedang,2
+614,306.7,9.0,18.0,27.0,Oncom Hitam Goreng bertepung ,Karbo,Tinggi,2
+615,351.0,11.0,5.3,65.9,Oncom kacang hijau + singkong,Karbo,Tinggi,2
+616,132.0,12.7,3.8,13.7,Oncom Kacang Tanah pepes,Karbo,Sedang,1
+617,187.0,13.0,6.0,22.6,Oncom Kedele,Karbo,Sedang,1
+618,368.0,6.8,32.0,13.2,Oncom Merah Goreng ,Lemak,Tinggi,2
+619,320.0,7.3,18.7,31.0,Oncom Merah Goreng bertepung ,Karbo,Tinggi,2
+620,40.0,2.0,2.0,3.0,Oncom Merah Sayur (tumis) ,Karbo,Rendah,1
+621,76.0,5.2,1.8,10.6,Oncom pepes,Karbo,Rendah,1
+622,288.6,8.3,8.9,44.3,Onde-onde ,Karbo,Sedang,2
+623,115.0,1.5,6.0,14.0,Ongol-ongol ,Karbo,Sedang,1
+624,111.0,0.3,2.7,21.2,Ongol-ongol sagu,Karbo,Sedang,1
+625,940.0,36.0,42.0,104.0,Opak Singkong ,Karbo,Tinggi,0
+626,117.0,13.7,5.0,4.3,Oramu ninahu ndawa olaho masakan,Protein,Sedang,1
+627,125.0,10.4,8.6,0.8,Otak,Protein,Sedang,1
+628,351.0,0.9,0.9,84.9,Oyek,Karbo,Tinggi,2
+629,342.0,2.3,0.1,83.1,Oyek (dari singkong),Karbo,Tinggi,2
+630,77.0,3.5,4.6,5.4,Paku hinela wulelenggapaya,Karbo,Rendah,1
+631,494.0,7.5,36.4,40.1,Pala biji,Karbo,Tinggi,2
+632,42.0,0.3,0.2,10.9,Pala daging,Karbo,Rendah,1
+633,460.0,28.5,35.2,7.2,Paniki masak santan masakan,Lemak,Tinggi,0
+634,133.8,3.0,1.6,27.0,Papais ,Karbo,Sedang,1
+635,61.0,0.2,0.1,14.9,Papeda,Karbo,Rendah,1
+636,87.0,10.5,2.5,5.5,Parede baleh masakan,Protein,Rendah,1
+637,29.0,1.1,0.3,6.6,Paria (Pare),Karbo,Rendah,1
+638,16.0,0.8,0.2,3.4,Paria Putih kukus,Karbo,Rendah,1
+639,19.0,1.0,0.4,3.6,Paria putih segar,Karbo,Rendah,1
+640,307.0,4.5,13.3,42.4,Pastel,Karbo,Tinggi,2
+641,362.0,0.5,0.3,86.9,Pati Singkong (tapioka),Karbo,Tinggi,2
+642,23.0,1.8,0.3,4.5,Pe-Cay,Karbo,Rendah,1
+643,156.0,28.0,4.0,0.0,Peda Ikan Banjar,Protein,Sedang,0
+644,75.0,2.5,2.8,10.0,Pelecing kangkung,Karbo,Rendah,1
+645,219.0,19.7,13.6,4.4,Pelepah manuk masakan,Protein,Sedang,1
+646,162.0,4.9,3.0,27.8,Pempek adaan,Karbo,Sedang,1
+647,156.0,4.2,1.4,31.6,Pempek belida,Karbo,Sedang,1
+648,152.0,4.5,2.3,28.2,Pempek kapal selam,Karbo,Sedang,1
+649,211.0,12.3,6.1,26.6,Pempek kelesan,Karbo,Sedang,1
+650,243.0,5.2,7.3,39.1,Pempek kulit,Karbo,Sedang,1
+651,173.0,7.2,1.2,33.4,Pempek tenggiri,Karbo,Sedang,1
+652,372.0,7.8,36.3,3.5,Pencok lele masakan,Lemak,Tinggi,2
+653,174.0,13.1,12.2,2.2,Penyu serapah masakan,Protein,Sedang,1
+654,19.0,0.6,0.1,3.9,Pepare ular segar,Karbo,Rendah,1
+655,275.0,11.6,11.6,30.2,Pepaya lodeh,Karbo,Sedang,2
+656,26.0,2.1,0.1,4.9,Pepaya Muda,Karbo,Rendah,1
+657,46.0,0.5,12.0,12.2,Pepaya segar,Karbo,Rendah,1
+658,76.0,5.2,1.8,10.6,Pepea oncom ampas tahu,Karbo,Rendah,1
+659,400.0,0.0,0.0,95.0,Permen ,Karbo,Tinggi,2
+660,142.0,10.4,2.0,22.0,Pete Segar,Karbo,Sedang,1
+661,50.0,3.7,1.0,9.0,Peterseli,Karbo,Rendah,1
+662,161.0,20.0,0.2,24.0,Petis Ikan,Karbo,Sedang,1
+663,220.0,15.0,0.1,40.0,Petis Udang,Karbo,Sedang,1
+664,345.0,23.8,1.4,59.3,Petis udang kering,Karbo,Tinggi,0
+665,220.0,15.0,0.9,38.0,Petis udang pasta,Karbo,Sedang,1
+666,514.0,1.0,27.8,647.0,Pilus ,Karbo,Tinggi,2
+667,107.0,15.9,0.6,0.4,Pinda masakan,Protein,Sedang,1
+668,157.0,28.0,4.2,0.0,Pindang Ikan Banjar,Protein,Sedang,0
+669,170.0,31.0,4.2,0.0,Pindang Ikan Benggol,Protein,Sedang,0
+670,153.0,30.0,2.8,0.0,Pindang Ikan Layang,Protein,Sedang,0
+671,142.0,27.0,3.0,0.0,Pindang Ikan Selar Kecil,Protein,Sedang,0
+672,124.0,9.5,9.6,0.0,Pindang kenari masakan,Lemak,Sedang,1
+673,99.0,1.2,0.2,25.8,Pisang Ambon,Karbo,Rendah,1
+674,68.0,1.3,0.2,17.2,Pisang angleng (pisang ampyang) segar,Karbo,Rendah,1
+675,120.0,1.1,0.2,26.8,Pisang ayam segar,Karbo,Sedang,1
+676,127.0,2.1,0.3,31.1,Pisang gapi segar ,Karbo,Sedang,1
+677,220.0,2.3,2.3,6.3,Pisang Goreng ,Karbo,Sedang,1
+678,115.0,1.9,0.2,27.9,Pisang goroho segar,Karbo,Sedang,1
+679,117.0,2.0,0.3,28.9,Pisang hijau segar,Karbo,Sedang,1
+680,100.0,1.4,0.5,23.6,Pisang kayu segar,Karbo,Rendah,1
+681,109.0,0.8,0.5,26.3,Pisang kepok segar,Karbo,Sedang,1
+682,145.0,1.1,0.3,34.5,Pisang ketip segar,Karbo,Sedang,1
+683,96.0,1.0,0.2,22.5,Pisang kidang segar,Karbo,Rendah,1
+684,99.0,1.3,0.2,25.6,Pisang Lampung,Karbo,Rendah,1
+685,127.0,1.4,0.2,33.6,Pisang Mas,Karbo,Sedang,1
+686,127.0,1.4,0.2,31.8,Pisang mas bali,Karbo,Sedang,1
+687,134.0,1.1,0.5,35.5,Pisang Oli,Karbo,Sedang,1
+688,120.0,1.2,0.2,31.8,Pisang Raja,Karbo,Sedang,1
+689,118.0,1.2,0.2,31.1,Pisang Raja Sere (Susu),Karbo,Sedang,1
+690,98.0,1.3,1.2,20.5,Pisang rotan segar,Karbo,Rendah,1
+691,625.0,1.0,0.0,8.1,Pisang Siam goreng,Karbo,Tinggi,2
+692,113.0,1.2,0.2,26.7,Pisang talas segar,Karbo,Sedang,1
+693,45.0,2.2,0.3,10.3,Prey (bawang daun),Karbo,Rendah,1
+694,33.0,4.5,0.4,2.8,Pucuk lumai/daun leunca segar,Protein,Rendah,1
+695,216.0,2.6,3.1,44.4,Pulut,Karbo,Sedang,1
+696,224.0,26.2,11.3,4.4,Punai daging goreng,Protein,Sedang,0
+697,104.0,1.9,4.1,15.1,Pundut nasi,Karbo,Sedang,1
+698,25.0,1.5,0.5,3.6,Purundawa,Karbo,Rendah,1
+699,76.0,4.1,1.1,15.2,Purut segar,Karbo,Rendah,1
+700,76.0,3.6,0.3,14.6,Putri malu segar,Karbo,Rendah,1
+701,163.0,2.2,6.5,23.8,Putri selat,Karbo,Sedang,1
+702,200.0,1.0,2.4,43.8,Putu Mayang ,Karbo,Sedang,1
+703,136.0,43.0,2.4,3.0,Ragi,Protein,Sedang,0
+704,76.0,12.1,2.0,2.4,Rajungan segar,Protein,Rendah,1
+705,69.0,0.9,0.1,18.1,Rambutan,Karbo,Rendah,1
+706,11.0,0.0,0.0,2.7,Rambutan Aceh,Karbo,Rendah,1
+707,76.0,0.5,0.2,18.0,Rambutan binjai segar,Karbo,Rendah,1
+708,4.0,0.0,0.0,0.9,Rambutan sinyonya,Karbo,Rendah,1
+709,295.0,7.3,8.5,47.5,Rarawuan ,Karbo,Sedang,2
+710,394.0,2.2,8.8,76.6,Rasbi (Beras Ubi),Karbo,Tinggi,2
+711,350.0,0.9,0.4,85.7,Rasi (Beras Singkong),Karbo,Tinggi,2
+712,60.0,5.4,2.5,4.0,Rawon masakan,Protein,Rendah,1
+713,81.0,16.2,1.2,0.7,Rebon (udang kecil segar),Protein,Rendah,1
+714,299.0,29.4,3.6,3.2,Rebon kering,Protein,Sedang,0
+715,81.0,16.2,1.2,0.7,Rebon udang kecil segar,Protein,Rendah,1
+716,27.0,0.6,0.3,5.2,Rebung,Karbo,Rendah,1
+717,320.0,7.2,4.2,63.3,Rebung laut mentah,Karbo,Tinggi,2
+718,451.0,11.2,20.2,59.7,Rempeyek kacang tolo,Karbo,Tinggi,2
+719,497.0,17.0,27.6,50.8,Rempeyek kacang uci,Karbo,Tinggi,2
+720,193.0,22.6,7.9,7.8,Rendang sapi masakan,Protein,Sedang,1
+721,471.0,4.7,21.8,64.1,Renggi goreng,Karbo,Tinggi,2
+722,75.0,1.6,0.6,15.8,Rimbang segar,Karbo,Rendah,1
+723,335.0,5.3,3.5,70.5,Risoles ,Karbo,Tinggi,2
+724,341.0,5.5,16.2,43.3,Roti boong,Karbo,Tinggi,2
+725,350.0,7.5,2.0,75.5,Roti Gambang ,Karbo,Tinggi,2
+726,248.0,8.0,1.2,50.0,Roti Putih,Karbo,Sedang,2
+727,249.0,7.9,1.5,49.7,Roti warna sawo matang,Karbo,Sedang,2
+728,153.0,11.3,8.4,8.0,Rujak cingur,Protein,Sedang,1
+729,41.0,1.4,0.3,8.1,Rumput laut,Karbo,Rendah,1
+730,536.0,40.5,41.5,0.0,Rusa daging dendeng mentah,Lemak,Tinggi,0
+731,110.0,11.5,2.0,11.7,Rusip,Karbo,Sedang,1
+732,198.0,24.6,10.7,0.9,RW anjing masakan,Protein,Sedang,0
+733,449.0,30.6,25.5,31.9,Saga biji tanpa kulit,Karbo,Tinggi,0
+734,338.0,0.6,0.3,83.1,Sagu Ambon ,Karbo,Tinggi,2
+735,355.0,0.6,1.1,85.6,Sagu aren kering,Karbo,Tinggi,2
+736,231.0,0.6,0.2,56.6,Sagu aren segar,Karbo,Sedang,1
+737,291.0,0.5,4.0,63.4,Sagu forno,Karbo,Sedang,2
+738,230.0,0.6,0.2,56.5,Sagu kasbi segar,Karbo,Sedang,1
+739,452.0,2.8,14.8,76.8,Sagu Lemak (Kue Sagon),Karbo,Tinggi,2
+740,347.0,0.9,0.3,85.2,Sagu lempeng,Karbo,Tinggi,2
+741,364.0,0.1,0.2,90.5,Sagu Rendang,Karbo,Tinggi,2
+742,362.0,0.5,0.3,86.9,Sagu singkong kering,Karbo,Tinggi,2
+743,354.0,0.8,8.3,68.9,Sagu sinole,Karbo,Tinggi,2
+744,57.0,0.5,0.1,13.6,Salak bali segar,Karbo,Rendah,1
+745,55.0,0.4,0.2,12.8,Salak medan segar,Karbo,Rendah,1
+746,87.0,0.8,0.4,20.1,Salak pondoh segar,Karbo,Rendah,1
+747,281.0,2.4,0.7,66.1,Sale pisang siam,Karbo,Sedang,2
+748,122.0,2.0,10.0,7.6,Santan (dengan air),Lemak,Sedang,1
+749,324.0,4.2,34.3,55.6,Santan (kelapa saja),Karbo,Tinggi,2
+750,324.0,4.2,34.3,5.6,Santan murni,Lemak,Tinggi,2
+751,98.0,2.0,0.4,24.5,Saos Tomat,Karbo,Rendah,1
+752,212.0,18.0,10.6,59.3,Sapi abon,Karbo,Sedang,1
+753,108.0,17.6,4.2,0.0,Sapi babat segar,Protein,Sedang,1
+754,182.0,32.0,6.0,0.0,Sapi daging asap,Protein,Sedang,0
+755,301.0,55.0,9.0,0.0,Sapi daging dendeng mentah,Protein,Tinggi,0
+756,273.0,17.5,22.0,0.0,Sapi daging gemuk segar,Lemak,Sedang,2
+757,289.0,16.0,25.0,0.0,Sapi daging kornet,Lemak,Sedang,2
+758,174.0,19.6,10.0,0.0,Sapi daging kurus segar,Protein,Sedang,1
+759,201.0,18.8,14.0,0.0,Sapi daging lemak sedang segar,Protein,Sedang,1
+760,448.0,14.5,42.3,2.3,Sapi daging sosis (Worst),Lemak,Tinggi,2
+761,183.0,12.0,14.4,1.4,Sapi daleman segar,Lemak,Sedang,1
+762,98.0,21.9,1.1,0.0,Sapi dideh/darah,Protein,Rendah,1
+763,137.0,15.0,8.1,0.9,Sapi ginjal segar,Protein,Sedang,1
+764,274.0,16.0,22.0,3.0,Sapi hati sosis (liverworst),Lemak,Sedang,2
+765,84.0,10.5,4.6,0.2,Sapi keleponan segar,Protein,Rendah,1
+766,132.0,19.7,3.2,6.0,Sapi liver segar,Protein,Sedang,1
+767,123.0,10.4,8.6,0.8,Sapi otak segar,Protein,Sedang,1
+768,360.0,57.3,6.0,19.2,Sapi paru dendeng mentah,Protein,Tinggi,0
+769,268.0,23.9,12.7,14.5,Sapi paru goreng,Protein,Sedang,0
+770,126.0,14.0,7.2,1.5,Sapi usus segar,Protein,Sedang,1
+771,281.0,37.5,0.3,32.1,Sarang Burung,Protein,Sedang,0
+772,338.0,21.1,27.0,1.0,Sardines dalam kaleng,Lemak,Tinggi,2
+773,344.0,30.0,20.0,43.0,Sari Kedelai bubuk,Karbo,Tinggi,0
+774,166.0,2.3,2.8,32.9,Sarimuka,Karbo,Sedang,1
+775,283.0,12.1,16.8,20.9,Sate Bandeng,Karbo,Sedang,2
+776,110.0,15.5,0.5,11.5,Sate Kulit ,Protein,Sedang,1
+777,179.0,22.5,3.5,13.3,Sate penyu masakan,Protein,Sedang,1
+778,274.0,12.9,18.6,13.6,Sate pusut masakan,Lemak,Sedang,2
+779,126.7,14.0,7.3,1.3,Sate Usus ,Protein,Sedang,1
+780,22.0,2.3,0.3,4.0,Sawi,Karbo,Rendah,1
+781,9.0,1.0,0.1,1.7,Sawi putih / pecai segar,Karbo,Rendah,1
+782,30.0,1.9,0.5,4.4,Sawi taiwan segar,Karbo,Rendah,1
+783,19.0,1.3,0.2,2.9,Sawi tanah segar,Karbo,Rendah,1
+784,92.0,0.5,1.1,22.4,Sawo,Karbo,Rendah,1
+785,64.0,1.0,3.1,8.0,Sawo duren segar,Karbo,Rendah,1
+786,111.0,0.9,2.3,21.6,Sawo kecik segar,Karbo,Sedang,1
+787,92.0,0.5,1.1,22.4,Sawo Manila segar,Karbo,Rendah,1
+788,29.0,0.7,0.6,5.0,Sayur asem,Karbo,Rendah,1
+789,49.0,1.7,0.3,9.8,Sayur bunga pepaya,Karbo,Rendah,1
+790,178.0,2.6,13.9,10.6,Sayur garu,Lemak,Sedang,1
+791,133.0,7.3,6.6,11.2,Sayur kohu-kohu,Karbo,Sedang,1
+792,64.0,2.1,0.6,12.5,Sayur lebui,Karbo,Rendah,1
+793,36.0,2.7,0.7,4.8,Sayur lilin-terubuk,Karbo,Rendah,1
+794,49.0,3.1,2.5,3.6,Sayur ndusuk,Karbo,Rendah,1
+795,27.0,1.3,2.0,1.0,Sayur sop,Lemak,Rendah,1
+796,67.0,5.2,2.9,5.1,Sayur umbut kelapa,Protein,Rendah,1
+797,57.0,5.4,2.6,3.1,Sayur umbut rotan,Protein,Rendah,1
+798,15.0,1.2,0.2,2.9,Selada,Karbo,Rendah,1
+799,17.0,1.7,0.3,3.0,Selada Air,Karbo,Rendah,1
+800,19.0,2.7,0.2,2.9,Selada Air rebus,Karbo,Rendah,1
+801,20.0,1.0,0.1,4.6,Seledri,Karbo,Rendah,1
+802,28.0,0.5,0.2,6.9,Semangka,Karbo,Rendah,1
+803,192.5,4.5,6.0,30.3,Semur Jengkol ,Karbo,Sedang,1
+804,64.0,0.6,0.3,14.8,Sente,Karbo,Rendah,1
+805,353.0,0.7,0.2,84.7,Sente talas segar,Karbo,Tinggi,2
+806,88.0,7.9,1.6,10.6,Sepi masakan,Karbo,Rendah,1
+807,298.0,8.0,23.8,48.9,Serbuk Coklat,Karbo,Sedang,2
+808,478.0,2.5,21.2,69.2,Serimping talas kebumen,Karbo,Tinggi,2
+809,213.0,0.0,0.0,55.0,Setrup sirup,Karbo,Sedang,1
+810,88.0,3.2,8.0,0.8,Shabu-shabu,Lemak,Rendah,1
+811,474.0,11.2,42.5,11.7,Sie reuboh masakan,Lemak,Tinggi,2
+812,81.0,5.1,4.5,5.1,Singkah (rotan muda),Karbo,Rendah,1
+813,285.0,1.0,18.0,28.0,Singkong Goreng ,Karbo,Sedang,2
+814,146.0,1.2,0.3,34.7,Singkong kukus,Karbo,Sedang,1
+815,173.0,0.5,0.1,42.5,Singkong tape,Karbo,Sedang,1
+816,95.3,4.4,2.2,14.4,Siomay ,Karbo,Rendah,1
+817,65.0,1.0,0.3,16.3,Sirsak,Karbo,Rendah,1
+818,213.0,0.0,0.0,55.0,Sirup,Karbo,Sedang,1
+819,71.0,7.5,3.6,2.2,Sop buntut masakan,Protein,Rendah,1
+820,49.0,5.8,0.5,5.3,Sop daging sapi masakan,Protein,Rendah,1
+821,68.0,9.0,1.9,3.7,Sop kaki sapi masakan,Protein,Rendah,1
+822,34.0,5.5,0.8,1.1,Sop kambing masakan,Protein,Rendah,1
+823,71.0,7.4,2.6,4.5,Sop konro masakan,Protein,Rendah,1
+824,12.0,0.5,0.1,2.0,Sop Kool,Karbo,Rendah,1
+825,15.0,0.6,0.1,3.1,Sop Kool dan Wortel,Karbo,Rendah,1
+826,89.0,7.2,5.0,3.9,Sop saudara masakan,Protein,Rendah,1
+827,42.0,3.9,1.7,2.8,Soto bandung masakan,Protein,Rendah,1
+828,110.0,2.9,9.5,3.2,Soto banjar masakan,Lemak,Sedang,1
+829,135.0,2.5,8.8,11.5,Soto betawi masakan,Karbo,Sedang,1
+830,127.5,2.6,9.4,8.3,Soto dengan Daging,Lemak,Sedang,1
+831,92.0,11.8,4.3,1.4,Soto jeroan masakan,Protein,Rendah,1
+832,38.0,2.6,2.3,1.8,Soto kudus masakan,Protein,Rendah,1
+833,60.0,3.5,4.5,1.3,Soto madura masakan,Lemak,Rendah,1
+834,127.0,5.9,6.6,11.0,Soto padang masakan,Karbo,Sedang,1
+835,94.0,3.0,6.8,5.1,Soto pekalongan masakan,Lemak,Rendah,1
+836,75.0,3.6,5.2,3.5,Soto pemalang masakan,Lemak,Rendah,1
+837,80.0,3.2,3.5,9.0,Soto sukaraja masakan,Karbo,Rendah,1
+838,86.0,2.3,8.5,0.0,Soto sulung masakan,Lemak,Rendah,1
+839,117.1,0.4,8.6,9.6,Soto tanpa Daging ,Karbo,Sedang,1
+840,139.0,7.4,2.1,22.6,Spaghetti,Karbo,Sedang,1
+841,101.0,1.7,0.6,35.2,Srikaya,Karbo,Sedang,1
+842,75.0,5.6,0.4,12.2,Sukiyaki masakan,Karbo,Rendah,1
+843,119.0,1.4,0.2,28.1,Sukun muda segar,Karbo,Sedang,1
+844,126.0,1.6,0.2,24.5,Sukun tua segar,Karbo,Sedang,1
+845,418.0,19.0,9.0,65.5,Susu asam untuk bayi bubuk,Karbo,Tinggi,2
+846,513.0,24.6,30.0,36.2,Susu bubuk,Karbo,Tinggi,0
+847,64.0,4.3,2.3,6.6,Susu Kambing,Karbo,Rendah,1
+848,41.0,3.5,2.5,5.0,Susu Kedelai,Karbo,Rendah,1
+849,336.0,8.2,10.0,55.0,Susu Kental Manis,Karbo,Tinggi,2
+850,138.0,7.0,7.9,9.9,Susu Kental Tak Manis,Karbo,Sedang,1
+851,160.0,6.3,12.0,7.1,Susu Kerbau,Lemak,Sedang,1
+852,61.0,3.2,3.5,4.3,Susu Sapi,Karbo,Rendah,1
+853,36.0,3.5,0.1,5.1,Susu Skim (tak berlemak),Karbo,Rendah,1
+854,359.0,35.6,1.0,52.0,Susu skim bubuk,Karbo,Tinggi,0
+855,36.0,3.5,0.1,5.1,Susu skim segar,Karbo,Rendah,1
+856,87.0,5.3,5.2,6.3,Susupan,Karbo,Rendah,1
+857,90.0,1.5,0.1,21.9,Suweg kukus,Karbo,Rendah,1
+858,69.0,1.0,0.1,15.7,Suweg mentah,Karbo,Rendah,1
+859,74.0,1.4,0.1,17.2,Suweg talas segar,Karbo,Rendah,1
+860,347.0,0.5,0.9,84.2,Suwir-suwir,Karbo,Tinggi,2
+861,68.0,7.8,4.6,1.6,Tahu,Protein,Rendah,1
+862,115.0,9.7,8.5,2.5,Tahu goreng,Protein,Sedang,1
+863,328.0,12.6,19.9,24.6,Tahu telur,Karbo,Tinggi,2
+864,148.0,13.8,8.5,4.0,Takwa,Protein,Sedang,1
+865,120.0,1.5,0.3,28.2,Talas bogor kukus,Karbo,Sedang,1
+866,163.0,2.3,0.5,36.4,Talas pontianak segar,Karbo,Sedang,1
+867,115.0,1.8,0.5,25.9,Talas viqueque segar,Karbo,Sedang,1
+868,120.0,1.5,0.3,28.2,Tales kukus,Karbo,Sedang,1
+869,98.0,1.9,0.2,23.7,Tales mentah,Karbo,Rendah,1
+870,166.0,10.4,4.9,24.1,Taoco,Karbo,Sedang,1
+871,88.0,3.2,2.1,14.0,Taoge goreng,Karbo,Rendah,1
+872,76.0,9.0,2.6,6.4,Taoge kacang kedelai segar,Protein,Rendah,1
+873,28.0,3.0,0.8,4.0,Taoge seduh,Karbo,Rendah,1
+874,34.0,3.7,1.2,4.3,Taoge segar,Karbo,Rendah,1
+875,104.0,12.9,6.8,1.2,Taokoa,Protein,Sedang,1
+876,99.0,1.7,0.3,22.4,Tapai beras,Karbo,Rendah,1
+877,166.0,3.8,1.0,34.4,Tapai ketan hitam,Karbo,Sedang,1
+878,172.0,3.0,0.5,37.5,Tapai ketan putih,Karbo,Sedang,1
+879,169.0,1.4,0.3,40.2,Tapai singkong,Karbo,Sedang,1
+880,358.0,7.5,4.3,70.4,Tauco cap DAS cake,Karbo,Tinggi,2
+881,277.0,9.1,4.7,49.6,Tauji cap singa,Karbo,Sedang,2
+882,25.0,4.6,0.4,3.0,Tebu Terubuk,Protein,Rendah,1
+883,83.0,10.4,3.4,2.8,Tedong pallu basa masakan,Protein,Rendah,1
+884,132.0,19.5,0.7,67.8,Teh,Karbo,Sedang,1
+885,300.0,28.3,4.8,53.6,Teh hijau daun kering,Karbo,Sedang,0
+886,299.0,24.1,3.5,59.0,Teh melati daun kering,Karbo,Sedang,0
+887,34.0,2.0,0.1,7.9,Tekokak,Karbo,Rendah,1
+888,294.0,8.3,1.7,72.6,Tekokak kering,Karbo,Sedang,2
+889,53.0,1.9,0.9,9.4,Tekwan,Karbo,Rendah,1
+890,162.0,12.8,11.5,0.7,Telur Ayam,Protein,Sedang,1
+891,361.0,19.3,31.9,0.7,Telur Ayam bagian kuning,Lemak,Tinggi,2
+892,50.0,10.8,0.0,0.8,Telur Ayam bagian putih,Protein,Rendah,1
+893,383.0,15.1,32.9,8.3,Telur Ayam ceplok,Lemak,Tinggi,2
+894,251.0,16.3,19.4,1.4,Telur Ayam dadar,Lemak,Sedang,2
+895,179.0,13.6,13.3,4.4,Telur ayam kampung ,Protein,Sedang,1
+896,386.0,17.0,35.0,0.8,Telur bebek bagian kuning segar,Lemak,Tinggi,2
+897,54.0,11.0,0.0,0.8,Telur Bebek bagian putih,Protein,Rendah,1
+898,54.0,11.0,0.0,0.8,Telur bebek bagian putih segar,Protein,Rendah,1
+899,320.0,15.1,30.5,0.9,Telur Bebek ceplok,Lemak,Tinggi,2
+900,301.0,20.0,23.7,0.0,Telur Bebek dadar,Lemak,Tinggi,2
+901,187.0,10.9,12.4,7.9,Telur bebek tambak segar,Lemak,Sedang,1
+902,195.0,13.6,13.6,1.4,Telur Bebek telur asin,Protein,Sedang,1
+903,116.0,10.7,7.0,1.6,Telur burung puyuh segar,Protein,Sedang,1
+904,144.0,12.0,10.2,0.0,Telur Penyu,Protein,Sedang,1
+905,425.0,31.0,28.0,10.0,Telur Terubuk,Protein,Tinggi,0
+906,119.0,4.4,3.5,18.3,Tempe bongkrek,Karbo,Sedang,1
+907,73.0,5.7,1.3,4.2,Tempe Gembus,Protein,Rendah,1
+908,76.0,6.8,0.7,10.6,Tempe gembus yogya,Karbo,Rendah,1
+909,328.0,18.4,23.2,12.8,Tempe Goreng ,Lemak,Tinggi,2
+910,139.0,12.5,0.8,21.9,Tempe kacang babi,Karbo,Sedang,1
+911,212.0,17.5,10.0,12.9,Tempe kacang belimbing,Protein,Sedang,1
+912,143.0,12.0,5.5,11.4,Tempe kedelai + jagung,Protein,Sedang,1
+913,350.0,24.5,26.6,10.4,Tempe kedelai murni goreng,Lemak,Tinggi,0
+914,201.0,20.8,8.8,13.5,Tempe kedelai murni mentah,Protein,Sedang,1
+915,141.0,10.2,1.3,23.2,Tempe koro benguk,Karbo,Sedang,1
+916,146.0,11.7,2.3,19.6,Tempe lamtoro var. gung dengan kulit,Karbo,Sedang,1
+917,131.0,18.0,0.8,13.0,Tempe lamtoro var. gung tanpa kulit,Protein,Sedang,1
+918,150.0,14.0,7.7,9.1,Tempe pasar segar,Protein,Sedang,1
+919,336.0,20.0,28.0,7.8,Tempe pasar goreng,Lemak,Tinggi,2
+920,240.0,6.0,2.7,49.3,Tempe Sayur ,Karbo,Sedang,1
+921,110.0,1.7,1.3,21.9,Tempoya,Karbo,Sedang,1
+922,126.0,1.1,2.2,25.7,Tempuyak,Karbo,Sedang,1
+923,355.0,0.7,0.2,85.2,Tepung Arrowroot,Karbo,Tinggi,2
+924,364.0,7.0,0.5,80.0,Tepung Beras,Karbo,Tinggi,2
+925,353.0,7.0,0.5,80.0,Tepung beras mentah,Karbo,Tinggi,2
+926,353.0,0.8,1.7,83.6,Tepung Ganyong,Karbo,Tinggi,2
+927,363.0,1.1,0.5,88.2,Tepung Gaplek,Karbo,Tinggi,2
+928,355.0,0.7,0.2,85.2,Tepung Garut (arrowroot),Karbo,Tinggi,2
+929,364.0,4.5,1.0,83.5,Tepung Hunkwee,Karbo,Tinggi,2
+930,316.0,60.1,6.5,22.4,Tepung Ikan,Protein,Tinggi,0
+931,355.0,9.2,3.9,73.7,Tepung Jagung Kuning,Karbo,Tinggi,2
+932,355.0,9.2,3.9,73.7,Tepung jagung putih,Karbo,Tinggi,2
+933,388.0,19.0,7.5,61.2,Tepung Jalejo,Karbo,Tinggi,2
+934,347.0,35.9,20.6,29.9,Tepung Kacang Kedelai,Protein,Tinggi,0
+935,347.0,0.3,0.1,85.6,Tepung Kentang,Karbo,Tinggi,2
+936,350.0,1.2,0.6,85.0,Tepung Mocaf,Karbo,Tinggi,2
+937,338.0,2.9,0.4,80.6,Tepung Pisang,Karbo,Tinggi,2
+938,353.0,0.7,0.2,84.7,Tepung Sagu,Karbo,Tinggi,2
+939,326.0,4.0,0.4,76.7,Tepung Sente,Karbo,Tinggi,2
+940,363.0,1.1,0.5,88.2,Tepung singkong/ Tapioka,Karbo,Tinggi,2
+941,353.0,2.9,0.5,84.4,Tepung Sukun,Karbo,Tinggi,2
+942,509.0,24.6,30.0,36.2,Tepung Susu,Karbo,Tinggi,0
+943,418.0,19.0,9.0,65.5,Tepung Susu Asam untuk bayi,Karbo,Tinggi,2
+944,362.0,35.6,1.0,52.0,Tepung Susu Skim,Karbo,Tinggi,0
+945,332.0,5.7,0.6,76.1,Tepung Tales Beneng,Karbo,Tinggi,2
+946,365.0,8.9,1.3,77.3,Tepung Terigu,Karbo,Tinggi,2
+947,354.0,2.8,0.6,84.4,Tepung Ubi Ungu,Karbo,Tinggi,2
+948,155.0,22.3,2.9,9.9,Terasi,Protein,Sedang,1
+949,191.0,33.1,3.6,6.6,Terasi dobo,Protein,Sedang,0
+950,174.0,30.0,3.5,3.5,Terasi Merah,Protein,Sedang,0
+951,174.0,30.0,3.5,5.6,Terasi merah,Protein,Sedang,0
+952,365.0,23.7,22.3,17.5,Teri balado masakan,Protein,Tinggi,0
+953,462.0,39.1,32.4,3.5,Teripang dendeng mentah,Protein,Tinggi,0
+954,24.0,1.1,0.2,5.5,Terong,Karbo,Rendah,1
+955,285.0,4.3,25.7,9.5,Terong + Oncom makanan,Lemak,Sedang,2
+956,39.0,2.3,1.9,2.0,Terong Asam,Protein,Rendah,1
+957,48.0,1.5,0.3,11.3,Terong Belanda,Karbo,Rendah,1
+958,45.0,1.9,0.8,7.5,Terong hintalo segar,Karbo,Rendah,1
+959,23.0,1.8,0.1,4.9,Terong kukus,Karbo,Rendah,1
+960,28.0,1.1,0.2,5.5,Terong segar,Karbo,Rendah,1
+961,52.0,2.1,1.1,8.6,Terung belanda segar,Karbo,Rendah,1
+962,52.0,1.1,0.4,11.2,Terung bengkulu segar,Karbo,Rendah,1
+963,25.0,2.1,0.1,5.3,Terung panjang,Karbo,Rendah,1
+964,23.0,1.8,0.1,4.9,Terung panjang kukus,Karbo,Rendah,1
+965,59.0,2.9,0.3,13.9,Tespong daun,Karbo,Rendah,1
+966,120.0,2.4,0.4,26.0,Tim (nasi tim),Karbo,Sedang,1
+967,33.0,1.2,1.3,4.1,Tinira ninahu nggaluku,Karbo,Rendah,1
+968,516.0,17.7,49.5,0.0,Tinoransak masakan,Lemak,Tinggi,2
+969,355.0,6.2,1.2,79.8,Tipa-tipa,Karbo,Tinggi,2
+970,353.0,2.4,1.1,83.4,Tiwul  ,Karbo,Tinggi,2
+971,395.0,3.2,8.5,76.5,Tiwul Instan,Karbo,Tinggi,2
+972,392.0,5.4,28.5,28.4,Toge -Tahu makanan,Lemak,Tinggi,2
+973,93.6,4.4,1.8,15.1,Toge Goreng ,Karbo,Rendah,1
+974,23.0,2.9,0.2,4.1,Toge kacang ijo,Karbo,Rendah,1
+975,35.0,5.0,0.2,5.8,Toge kacang tunggak,Karbo,Rendah,1
+976,67.0,9.0,2.6,6.4,Toge kedelai,Protein,Rendah,1
+977,28.0,3.0,0.8,4.0,Toge seduh,Karbo,Rendah,1
+978,20.0,1.0,0.2,3.5,Tomat air (juice) segar,Karbo,Rendah,1
+979,20.0,1.0,0.3,4.2,Tomat Masak,Karbo,Rendah,1
+980,24.0,1.3,0.5,4.7,Tomat merah segar,Karbo,Rendah,1
+981,24.0,2.0,0.7,3.3,Tomat muda segar,Karbo,Rendah,1
+982,189.0,11.3,15.7,0.6,Tumis bandeng,Lemak,Sedang,1
+983,48.0,1.4,4.2,2.6,Tumis bayam bersantan,Lemak,Rendah,1
+984,186.0,1.9,0.2,44.3,Ubi Cilembu,Karbo,Sedang,1
+985,160.0,3.7,1.3,55.3,Ubi Jalar Goreng ,Karbo,Sedang,1
+986,100.0,0.7,0.3,23.8,Ubi jalar kuning kukus,Karbo,Rendah,1
+987,119.0,0.5,0.4,25.1,Ubi jalar kuning segar,Karbo,Sedang,1
+988,83.0,1.5,0.2,18.8,Ubi jalar manis segar,Karbo,Rendah,1
+989,123.0,1.8,0.7,27.9,Ubi Jalar Merah,Karbo,Sedang,1
+990,151.0,1.6,0.3,35.4,Ubi jalar merah segar,Karbo,Sedang,1
+991,123.0,1.8,0.7,27.9,Ubi Jalar Putih,Karbo,Sedang,1
+992,114.0,1.4,9.6,25.6,Ubi Jalar Rebus,Karbo,Sedang,1
+993,184.0,1.4,0.3,22.5,Ubi Jalar Sayur,Karbo,Sedang,1
+994,108.0,0.5,0.4,25.6,Ubi jalar tinta/ kemayung,Karbo,Sedang,1
+995,165.0,0.9,0.2,39.8,Ubi jalar tinta/ kemayung kukus,Karbo,Sedang,1
+996,82.0,5.8,1.3,11.7,Uceng/ bunga melinjo segar,Karbo,Rendah,1
+997,56.0,11.4,0.6,1.2,Udang besar segar,Protein,Rendah,1
+998,81.0,16.5,0.3,3.0,Udang galah segar,Protein,Rendah,1
+999,295.0,62.4,2.3,1.8,Udang kering,Protein,Sedang,0
+1000,278.0,62.6,4.1,2.2,Udang kering mentah,Protein,Sedang,0
+1001,273.0,47.8,3.8,12.5,Udang papay mentah,Protein,Sedang,0
+1002,91.0,21.0,0.2,0.1,Udang segar,Protein,Rendah,1
+1003,380.0,11.9,30.3,14.9,Ulat sagu panggang,Lemak,Tinggi,2
+1004,241.0,5.8,21.6,5.8,Ulat sagu segar,Lemak,Sedang,1
+1005,120.0,2.8,0.5,82.3,Umbi Uwi segar,Karbo,Sedang,1
+1006,34.0,2.4,0.3,5.5,Umbut rotan,Karbo,Rendah,1
+1007,130.0,14.0,7.2,1.5,Usus Sapi,Protein,Sedang,1
+1008,101.0,2.0,0.2,19.8,Uwi,Karbo,Sedang,1
+1009,363.0,8.7,0.4,78.7,Vermicelli,Karbo,Tinggi,2
+1010,303.0,6.3,2.7,63.3,Wajit ,Karbo,Tinggi,2
+1011,45.0,0.8,0.9,8.1,Waluh balamak ,Karbo,Rendah,1
+1012,424.0,1.3,10.7,80.7,Widaran,Karbo,Tinggi,2
+1013,568.0,19.3,51.1,18.1,Wijen,Lemak,Tinggi,2
+1014,355.0,3.2,15.1,51.4,Wingko babat,Karbo,Tinggi,2
+1015,143.0,3.1,7.8,15.0,Woku ubi,Karbo,Sedang,1
+1016,452.0,14.5,42.3,2.3,Sosis daging,Lemak,Tinggi,2
+1017,42.0,1.2,0.6,9.3,Wortel Segar,Karbo,Rendah,1
+1018,37.0,1.0,0.6,8.3,Wortel kukus,Karbo,Rendah,1
+1019,28.0,0.7,0.5,6.3,Wortel rebus,Karbo,Rendah,1
+1020,254.0,3.0,1.1,58.1,Yangko,Karbo,Sedang,2
+1021,52.0,3.3,2.5,4.0,Yoghurt,Karbo,Rendah,1

@@ -1,0 +1,3 @@
+"Start Time","Duration","Run ID","Name","Source Type","Source Name","User","Status","algorithm","init","n_clusters","calinski_harabasz_index","davies_bouldin_index","silhouette_score"
+"2025-05-27 23:40:34","9.7s","68c548c629e84bf886b385f18e64e0e2","dazzling-croc-117","LOCAL","C:\Users\Aulia anantiyo\AppData\Roaming\Python\Python310\site-packages\ipykernel_launcher.py","Aulia anantiyo","FINISHED","lloyd","k-means++","3","1021.5875778610866","0.800327080782114","0.5240220055496236"
+"2025-05-27 23:37:40","8.3s","135f84cc22f04053b08a9eeae4692231","rare-grub-817","LOCAL","C:\Users\Aulia anantiyo\AppData\Roaming\Python\Python310\site-packages\ipykernel_launcher.py","Aulia anantiyo","FINISHED","","","3","1021.5875778610866","0.800327080782114","0.5240220055496236"

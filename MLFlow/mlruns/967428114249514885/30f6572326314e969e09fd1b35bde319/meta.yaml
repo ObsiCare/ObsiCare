@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/967428114249514885/30f6572326314e969e09fd1b35bde319/artifacts
+end_time: 1748365785183
+entry_point_name: ''
+experiment_id: '967428114249514885'
+lifecycle_stage: active
+run_id: 30f6572326314e969e09fd1b35bde319
+run_name: calm-skunk-443
+run_uuid: 30f6572326314e969e09fd1b35bde319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748365778519
+status: 3
+tags: []
+user_id: Aulia anantiyo

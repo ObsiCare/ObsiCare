@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/967428114249514885/70183fa4b8f64453b8f3be59623b295b/artifacts
+end_time: 1748365817626
+entry_point_name: ''
+experiment_id: '967428114249514885'
+lifecycle_stage: active
+run_id: 70183fa4b8f64453b8f3be59623b295b
+run_name: monumental-fish-151
+run_uuid: 70183fa4b8f64453b8f3be59623b295b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748365810684
+status: 3
+tags: []
+user_id: Aulia anantiyo

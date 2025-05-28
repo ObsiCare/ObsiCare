@@ -1,0 +1,25 @@
+artifact_path: model
+flavors:
+  python_function:
+    artifacts:
+      kmeans_model:
+        path: artifacts\kmeans_model.pkl
+        uri: kmeans_model.pkl
+      scaler_model:
+        path: artifacts\scaler.pkl
+        uri: scaler.pkl
+    cloudpickle_version: 3.1.0
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.10.0
+    streamable: false
+mlflow_version: 2.22.0
+model_size_bytes: 12784
+model_uuid: cf6e4af238b440febc61cd2da08fae9e
+prompts: null
+run_id: 30f6572326314e969e09fd1b35bde319
+utc_time_created: '2025-05-27 17:09:38.725691'

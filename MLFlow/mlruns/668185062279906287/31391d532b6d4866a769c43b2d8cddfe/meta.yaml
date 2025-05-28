@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/668185062279906287/31391d532b6d4866a769c43b2d8cddfe/artifacts
+end_time: 1748365807436
+entry_point_name: ''
+experiment_id: '668185062279906287'
+lifecycle_stage: active
+run_id: 31391d532b6d4866a769c43b2d8cddfe
+run_name: fearless-cow-267
+run_uuid: 31391d532b6d4866a769c43b2d8cddfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748365803479
+status: 3
+tags: []
+user_id: Aulia anantiyo
