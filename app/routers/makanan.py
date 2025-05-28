@@ -9,8 +9,8 @@ from app.schemas.makanan_schema import MakananCreate, MakananResponse
 from app.auth.auth_bearer import JWTBearer
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
-MODEL_PATH = os.path.join(BASE_DIR, "..", "ML", "model_clustering_makanan.pkl")
-SCALER_PATH = os.path.join(BASE_DIR, "..", "ML", "scaler_makanan.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "..", "ML", "kmeans_model.pkl")
+SCALER_PATH = os.path.join(BASE_DIR, "..", "ML", "scaler.pkl")
 
 router = APIRouter(
     prefix="/makanan",
@@ -18,7 +18,6 @@ router = APIRouter(
     dependencies=[Depends(JWTBearer())]
 )
 
-## Fungsi kategori kalori makanan disini
 def kategori_kalori(kal):
     if kal > 500:
         return "Tinggi"
