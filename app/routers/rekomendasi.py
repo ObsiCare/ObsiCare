@@ -50,9 +50,9 @@ def rekomendasi_makanan(
     if sisa_kalori > 1000:
         cluster_rekomendasi = [2]
     elif 300 <= sisa_kalori <= 1000:
-        cluster_rekomendasi = [1]
-    else:  # < 300
         cluster_rekomendasi = [0]
+    else:  # < 300
+        cluster_rekomendasi = [1]
         
     rekomendasi = (
         db.query(Makanan)
