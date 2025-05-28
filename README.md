@@ -1,6 +1,10 @@
 # ObsiCare
 
-**ObsiCare** ObsiCare adalah website inovatif yang dirancang untuk membantu penderita obesitas dalam memantau asupan nutrisi harian dan memperoleh rekomendasi makanan yang sesuai dengan kebutuhan gizi  masing-masing individu.
+# Cara menjalankan docker
+1. Clone ke direktori lokal anda
+2. Jalankan ```docker-compose up --build```
+
+**ObsiCare** adalah website inovatif yang dirancang untuk membantu penderita obesitas dalam memantau asupan nutrisi harian dan memperoleh rekomendasi makanan yang sesuai dengan kebutuhan gizi  masing-masing individu.
 
 ## Fitur Utama
 
